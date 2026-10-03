@@ -11,10 +11,12 @@ import { ContadorComodines } from './Comodin';
 import { Expediente } from './Expediente';
 import { Fragmentos } from './Fragmentos';
 import { Galeria } from './Galeria';
+import { Host } from './Host';
 import { GameCtx, useGame } from './game';
-import { useRuta, type Ruta } from './router';
+import { go, useRuta, type Ruta } from './router';
 import { SobreActual } from './SobreActual';
 import { SobreView } from './SobreView';
+import { useLongPress } from './useLongPress';
 
 const reducer = (s: GameState, a: Action) => reduce(s, a, SOBRES);
 
@@ -40,6 +42,8 @@ function Pantalla({ ruta }: { ruta: Ruta }) {
       return <Galeria />;
     case 'agenda':
       return <Agenda />;
+    case 'host':
+      return <Host />;
     default:
       return <SobreActual />;
   }
@@ -64,11 +68,13 @@ export function App({ initial }: { initial: GameState }) {
   }, [state]);
 
   const game = useMemo(() => ({ state, dispatch }), [state]);
+  // Entrada al modo Host: pulsación larga en el logo.
+  const longPress = useLongPress(() => go('/host'));
 
   return (
     <GameCtx.Provider value={game}>
       <header class="cabecera">
-        <span class="logo" aria-label="El Secreto de la Cuádriga">
+        <span class="logo" aria-label="El Secreto de la Cuádriga" {...longPress}>
           <Logo size={34} />
         </span>
         <span class="mono titulo-app">El Secreto de la Cuádriga</span>

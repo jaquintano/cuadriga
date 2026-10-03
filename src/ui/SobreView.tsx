@@ -1,10 +1,12 @@
 import { pad2, SOBRES } from '../core/content';
+import { aplicarLluvia } from '../core/lluvia';
 import { finalNum } from '../core/reducer';
 import type { SobreState } from '../core/state';
 import type { Sobre } from '../core/types';
 import { Campos } from './Campos';
 import { Comodin } from './Comodin';
 import { RetoFoto } from './Fotos';
+import { useGame } from './game';
 import { Rich } from './components/Rich';
 import { Tarjeta } from './Fragmentos';
 
@@ -18,7 +20,9 @@ const ETIQUETA_EXTRA: Record<string, string> = {
   mision: 'Misión',
 };
 
-export function SobreView({ sobre, s, onSiguiente }: { sobre: Sobre; s: SobreState; onSiguiente?: () => void }) {
+export function SobreView({ sobre: original, s, onSiguiente }: { sobre: Sobre; s: SobreState; onSiguiente?: () => void }) {
+  const { state } = useGame();
+  const sobre = aplicarLluvia(original, state.lluvia);
   const resuelto = s.st === 'SOLVED';
   return (
     <article class={`sobre${resuelto ? ' resuelto' : ''}`}>

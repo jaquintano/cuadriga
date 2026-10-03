@@ -979,6 +979,129 @@ summary:focus-visible {
   margin-bottom: 4px;
 }
 
+/* ============ Modo Host ============ */
+.host-pin input,
+.host-bloque textarea {
+  width: 100%;
+  min-height: 56px;
+  padding: 8px 12px;
+  border: 2px solid var(--tinta);
+  border-radius: var(--radio);
+  background: #fffaf0;
+  color: var(--tinta);
+  font: 24px var(--mono);
+}
+.host-pin input {
+  text-align: center;
+  letter-spacing: 0.4em;
+}
+.host-bloque textarea {
+  font: 18px/1.5 var(--serif);
+  margin-bottom: 8px;
+}
+.host-cab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.host-cab h2 {
+  margin: 0;
+}
+.host-cab button {
+  width: auto;
+}
+.host-estado {
+  font-size: 14px;
+  color: var(--sepia);
+}
+.host-bloque {
+  margin: 16px 0;
+  padding: 14px;
+  border: 2px solid var(--azul);
+  border-radius: var(--radio);
+  background: rgb(31 58 95 / 0.05);
+}
+.host-bloque h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--azul);
+}
+.host-bloque .btn-secundario,
+.host-bloque .confirmar {
+  margin-top: 8px;
+}
+.host-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.host-nav > button {
+  width: 52px;
+  padding: 0;
+  flex: 0 0 52px;
+  background: var(--azul);
+  border-color: var(--azul);
+}
+.host-nav-titulo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.host-nav-titulo .mono {
+  font-size: 13px;
+  color: var(--sepia);
+}
+.host-nav-titulo small {
+  font-size: 14px;
+  color: var(--sepia);
+}
+.host-datos dt {
+  margin-top: 10px;
+  font: 700 13px var(--mono);
+  text-transform: uppercase;
+  color: var(--azul);
+}
+.host-datos dd {
+  margin: 2px 0 0;
+}
+.host-acciones {
+  margin-top: 12px;
+}
+.interruptor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  font-weight: 700;
+}
+.interruptor input {
+  width: 28px;
+  height: 28px;
+  accent-color: var(--azul);
+}
+.btn-secundario.peligro {
+  background: var(--rojo);
+  border-color: var(--rojo);
+  color: var(--papel);
+}
+.peligro-titulo {
+  margin-top: 24px;
+  color: var(--rojo) !important;
+}
+.como-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  border: 2px solid var(--tinta);
+  border-radius: var(--radio);
+  font: 700 18px var(--mono);
+  cursor: pointer;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
