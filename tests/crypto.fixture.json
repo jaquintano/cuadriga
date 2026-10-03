@@ -1,0 +1,27 @@
+{
+ "salt": "sal-de-prueba-0123456789",
+ "pin": "4321",
+ "codigo": "1234",
+ "iter": 1000,
+ "hashes": {
+  "01.a": [
+   "789b77345457a214f963ce7e49019671795880c2bf1588e6a7cd858692348bdf"
+  ],
+  "02.a": [
+   "bcc9adb9e76b24c84fb24550448e8f0c460b2046ebdffe83475ce64de25870b6",
+   "e7440385a795d84960682c9f33f9d7a6569a0cd6cb95c02a7294c9d1d035963d"
+  ],
+  "03.c": [
+   "5586c5aed6c0dd476dfd5da2ac9fdd4a72bf81a1402ff1dc1b8b80dcca02a7a7"
+  ]
+ },
+ "cofreHash": "4f8f9a38e2618595a75ca0c2ae8614298dec0183cbd7552a53919065623e5253",
+ "host": {
+  "iv": "rcD4htvvw/MkEV6C",
+  "ct": "n1r0ZoHe165aO1emfrWUh06WC5vne9/Yd0i+jexShPBxsP4T6en1El6u/a/vzVf9b4QsM4In15JC2hgp6zmF2g66KXMTqomMQmIfc9jVnw3rw3fkWxby1ypDeQ=="
+ },
+ "carta": {
+  "iv": "1uSlhkrBuvFZhFeX",
+  "ct": "hjsbQdeBlWkY3W4yb482mHEpnv3e7fu2wQiJdbAKbDk+XukuRs1axJ5nRK04YADxC8Mi8A4diMrWmVbqIr+fVg=="
+ }
+}

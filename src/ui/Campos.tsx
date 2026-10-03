@@ -8,7 +8,7 @@ const FALLOS = [
   'Los Guardianes no reconocen esa respuesta. Mirad otra vez.',
   'Mmm… no es eso. Observad con calma.',
   'Todavía no. El lugar guarda la respuesta.',
-  'Casi, Guardiana… o no. Probad de nuevo.',
+  'Los Guardianes guardan silencio. Probad de nuevo.',
 ];
 
 function CampoInput({ sobre, campo, s }: { sobre: Sobre; campo: Campo; s: SobreState }) {

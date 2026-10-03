@@ -35,9 +35,8 @@ export function SobreCerrado({ sobre }: { sobre: Sobre }) {
         <dd>{sobre.dia}</dd>
         <dt>Hora</dt>
         <dd>{sobre.hora}</dd>
-        <dt>Abrir en</dt>
-        <dd>{sobre.lugar}</dd>
       </dl>
+      {/* El lugar no se muestra: lo revela el RUMBO del sobre anterior (anti-spoiler). */}
       <button class="lacre" onClick={abrir} disabled={abriendo} aria-label="Romper el sello y abrir el sobre">
         <span class="mitad izq">GL</span>
         <span class="mitad der">GL</span>

@@ -73,8 +73,8 @@ def sha(salt, campo, valor):
     return hashlib.sha256(f"{salt}|{campo}|{valor}".encode()).hexdigest()
 
 
-def derive(secret, salt, purpose):
-    return hashlib.pbkdf2_hmac("sha256", secret.encode(), f"{salt}:{purpose}".encode(), ITER, 32)
+def derive(secret, salt, purpose, iterations=ITER):
+    return hashlib.pbkdf2_hmac("sha256", secret.encode(), f"{salt}:{purpose}".encode(), iterations, 32)
 
 
 def encrypt(key, label, obj):
