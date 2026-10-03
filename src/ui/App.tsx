@@ -3,7 +3,9 @@ import { SOBRES } from '../core/content';
 import { reduce, type Action } from '../core/reducer';
 import type { GameState } from '../core/state';
 import { saveState } from '../storage/db';
+import { Icono } from './components/Iconos';
 import { Logo } from './components/Logo';
+import { Agenda } from './Agenda';
 import { Cofre } from './Cofre';
 import { ContadorComodines } from './Comodin';
 import { Expediente } from './Expediente';
@@ -16,11 +18,12 @@ import { SobreView } from './SobreView';
 
 const reducer = (s: GameState, a: Action) => reduce(s, a, SOBRES);
 
-const NAV: { ruta: Ruta['v']; href: string; texto: string }[] = [
-  { ruta: 'actual', href: '#/', texto: 'Sobre' },
-  { ruta: 'expediente', href: '#/expediente', texto: 'Expediente' },
-  { ruta: 'fragmentos', href: '#/fragmentos', texto: 'Fragmentos' },
-  { ruta: 'galeria', href: '#/galeria', texto: 'Fotos' },
+const NAV: { ruta: Ruta['v']; icono: string; href: string; texto: string }[] = [
+  { ruta: 'actual', icono: 'sobre', href: '#/', texto: 'Sobre' },
+  { ruta: 'expediente', icono: 'expediente', href: '#/expediente', texto: 'Expediente' },
+  { ruta: 'fragmentos', icono: 'fragmentos', href: '#/fragmentos', texto: 'Fragmentos' },
+  { ruta: 'agenda', icono: 'agenda', href: '#/agenda', texto: 'Agenda' },
+  { ruta: 'galeria', icono: 'galeria', href: '#/galeria', texto: 'Fotos' },
 ];
 
 function Pantalla({ ruta }: { ruta: Ruta }) {
@@ -35,6 +38,8 @@ function Pantalla({ ruta }: { ruta: Ruta }) {
       return <Cofre />;
     case 'galeria':
       return <Galeria />;
+    case 'agenda':
+      return <Agenda />;
     default:
       return <SobreActual />;
   }
@@ -75,7 +80,8 @@ export function App({ initial }: { initial: GameState }) {
       <nav class="nav">
         {NAV.map((n) => (
           <a key={n.ruta} href={n.href} class={ruta.v === n.ruta || (n.ruta === 'expediente' && ruta.v === 'sobre') || (n.ruta === 'fragmentos' && ruta.v === 'cofre') ? 'activo' : ''}>
-            {n.texto}
+            <Icono nombre={n.icono} />
+            <span>{n.texto}</span>
           </a>
         ))}
       </nav>

@@ -136,15 +136,18 @@ summary:focus-visible {
 }
 .nav a {
   flex: 1;
+  min-width: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 3px;
   min-height: var(--nav-h);
   color: var(--papel-osc);
-  font: 700 14px var(--mono);
+  font: 700 11px var(--mono);
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
 .nav a.activo {
   color: var(--papel);
@@ -888,6 +891,92 @@ summary:focus-visible {
   background: var(--rojo);
   border-color: var(--rojo);
   color: var(--papel);
+}
+
+/* ============ Agenda ============ */
+.dias {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.dias button {
+  flex: 1;
+  min-height: 48px;
+  padding: 0 6px;
+  font-size: 15px;
+  background: var(--papel);
+  color: var(--tinta);
+}
+.dias button.activo {
+  background: var(--tinta);
+  color: var(--papel);
+}
+.linea {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 3px solid var(--papel-osc);
+  margin-left: 64px;
+}
+.item-agenda {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  padding: 10px 0 10px 14px;
+}
+.item-agenda .hora {
+  position: absolute;
+  left: -70px;
+  width: 52px;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+}
+.item-agenda::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 16px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--papel);
+  border: 3px solid var(--sepia);
+}
+.item-agenda.es-sobre::before {
+  background: var(--rojo);
+  border-color: var(--rojo);
+}
+.item-agenda.es-sobre.resuelto::before {
+  background: var(--ok);
+  border-color: var(--ok);
+}
+.cuerpo-item {
+  display: flex;
+  flex-direction: column;
+}
+.cuerpo-item small {
+  font-size: 15px;
+  color: var(--sepia);
+  line-height: 1.4;
+}
+.etiqueta-sobre {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--rojo);
+  text-transform: uppercase;
+}
+.item-agenda.resuelto .etiqueta-sobre {
+  color: var(--ok);
+}
+.item-agenda.siguiente {
+  background: rgb(31 58 95 / 0.08);
+  border-radius: 0 var(--radio) var(--radio) 0;
+}
+.chip.ahora {
+  align-self: flex-start;
+  background: var(--azul);
+  margin-bottom: 4px;
 }
 
 @media (prefers-reduced-motion: reduce) {
