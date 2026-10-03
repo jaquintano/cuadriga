@@ -1,0 +1,24 @@
+# --- SPOILERS: nunca al repo público ---
+contenido.py
+Material/
+scripts/respuestas.yaml
+*.pdf
+.env
+.env.*
+
+# --- Build / dependencias ---
+node_modules/
+dist/
+dev-dist/
+__pycache__/
+*.pyc
+coverage/
+playwright-report/
+test-results/
+
+# --- Entorno ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
