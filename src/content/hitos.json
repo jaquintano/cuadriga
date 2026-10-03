@@ -1,0 +1,116 @@
+[
+ {
+  "dia": "Jueves 8",
+  "hora": "10:25",
+  "titulo": "Parada dulce: Rausch Schokoladenhaus",
+  "notas": "Charlottenstraße 60 (abre 10:00). Chocolate caliente arriba, con vistas a Gendarmenmarkt. 30 min."
+ },
+ {
+  "dia": "Jueves 8",
+  "hora": "12:45",
+  "titulo": "Comida libre",
+  "notas": "Zona Friedrichstraße / Unter den Linden."
+ },
+ {
+  "dia": "Jueves 8",
+  "hora": "13:30",
+  "titulo": "Dussmann das KulturKaufhaus",
+  "notas": "Friedrichstraße 90. Libros, música en CD y vinilo. 30 min (y vuelve cuando queráis: abre hasta medianoche)."
+ },
+ {
+  "dia": "Jueves 8",
+  "hora": "14:00",
+  "titulo": "Café y apfelstrudel en Einstein Unter den Linden",
+  "notas": "Unter den Linden 42. Café vienés de sobremesa. 40 min (a las 14:40, salid hacia el museo)."
+ },
+ {
+  "dia": "Jueves 8",
+  "hora": "16:45",
+  "titulo": "19grams Alex (café de especialidad)",
+  "notas": "Karl-Liebknecht-Str. 13, de camino a Alexanderplatz. Tostadero; café en grano para llevar. Cierra a las 17:00: id directos."
+ },
+ {
+  "dia": "Jueves 8",
+  "hora": "20:00",
+  "titulo": "Cena en Georgbräu (reservado)",
+  "notas": "Spreeufer 4. Vuelta: 25 min a pie o U2 Klosterstraße → Stadtmitte."
+ },
+ {
+  "dia": "Viernes 9",
+  "hora": "11:00",
+  "titulo": "Alquiler de bicis",
+  "notas": "Potsdam Hbf. Pedid candado bueno."
+ },
+ {
+  "dia": "Viernes 9",
+  "hora": "13:15",
+  "titulo": "Comida en Café Heider",
+  "notas": "Friedrich-Ebert-Straße 29, junto al Nauener Tor. Aparcad las bicis allí."
+ },
+ {
+  "dia": "Viernes 9",
+  "hora": "14:00",
+  "titulo": "Parada rápida en Café Guam",
+  "notas": "Mittelstraße 39. Tartas de queso; efectivo. Salida a Sanssouci hacia las 14:20."
+ },
+ {
+  "dia": "Viernes 9",
+  "hora": "16:15",
+  "titulo": "Paseo libre en bici por el parque",
+  "notas": "Palacio Nuevo, Charlottenhof y Orangerie, solo por caminos señalizados."
+ },
+ {
+  "dia": "Viernes 9",
+  "hora": "17:30",
+  "titulo": "Wist – Der Literaturladen",
+  "notas": "Dortustraße 17. Librería independiente. Abre hasta las 19:00."
+ },
+ {
+  "dia": "Viernes 9",
+  "hora": "18:00",
+  "titulo": "Devolución de bicis y vuelta",
+  "notas": "RE1 Potsdam Hbf → Friedrichstraße, U6 a Stadtmitte."
+ },
+ {
+  "dia": "Viernes 9",
+  "hora": "20:30",
+  "titulo": "Cena en Maximilians (reservado)",
+  "notas": "Friedrichstraße 185-190, a 5 min a pie del hotel."
+ },
+ {
+  "dia": "Sábado 10",
+  "hora": "10:00",
+  "titulo": "FREE TOUR Muro de Berlín y Guerra Fría (hasta 13:30)",
+  "notas": "Encuentro frente al Tränenpalast, 10 min antes. Sin sobres durante el tour."
+ },
+ {
+  "dia": "Sábado 10",
+  "hora": "13:45",
+  "titulo": "Comida",
+  "notas": "Prenzlauer Berg o junto al Mauerpark."
+ },
+ {
+  "dia": "Sábado 10",
+  "hora": "14:45",
+  "titulo": "Tribu Music Store",
+  "notas": "Schönhauser Allee 133. Handpans, gongs y cuencos para probar. 25 min."
+ },
+ {
+  "dia": "Sábado 10",
+  "hora": "15:40",
+  "titulo": "Shakespeare & Sons",
+  "notas": "Warschauer Str. 74 (parada M10 Grünberger Str.). Librería-café con bagels. 25 min."
+ },
+ {
+  "dia": "Sábado 10",
+  "hora": "17:35",
+  "titulo": "Descanso en el hotel",
+  "notas": "Desde Warschauer Straße: U1 + U6 (~25 min)."
+ },
+ {
+  "dia": "Sábado 10",
+  "hora": "19:45",
+  "titulo": "Cena",
+  "notas": "Unter den Linden o cerca de Pariser Platz. Ten el cofre a mano."
+ }
+]

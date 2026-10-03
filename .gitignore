@@ -1,6 +1,7 @@
 # --- SPOILERS: nunca al repo público ---
 contenido.py
 Material/
+scripts/respuestas.toml
 scripts/respuestas.yaml
 *.pdf
 .env
@@ -22,3 +23,6 @@ test-results/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Python venv
+.venv/

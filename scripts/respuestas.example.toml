@@ -1,0 +1,33 @@
+# Plantilla pública de scripts/respuestas.toml (el real no se sube: contiene las respuestas).
+#
+# Cada [[campo]] es una casilla de respuesta en el sobre, en este orden.
+#   tipo:  obligatorio (bloquea el avance) | honor | tesoro (opcionales, suman puntos de honor)
+#   modo:  exact    → la entrada normalizada (o su único número) coincide con un valor
+#          keywords → alguna palabra o bigrama de la entrada EMPIEZA por un valor (≥3 letras)
+#          libre    → cualquier texto no vacío
+#   cifra: posición 1-4 en la Tarjeta de Fragmentos (el valor es la propia respuesta)
+
+[[campo]]
+sobre = 1
+id = "a"
+tipo = "obligatorio"
+modo = "exact"
+etiqueta = "Número de cosas"
+valores = ["42"]
+
+[[campo]]
+sobre = 3
+id = "a"
+tipo = "obligatorio"
+modo = "exact"
+etiqueta = "Primera cifra"
+valores = ["0"]
+cifra = 1
+
+[[campo]]
+sobre = 3
+id = "h"
+tipo = "honor"
+modo = "keywords"
+etiqueta = "Pregunta de honor"
+valores = ["palabra", "otra palabra"]

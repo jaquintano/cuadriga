@@ -1,0 +1,962 @@
+{
+ "v": 1,
+ "dias": [
+  {
+   "id": "Jueves 8",
+   "fecha": "2026-10-08"
+  },
+  {
+   "id": "Viernes 9",
+   "fecha": "2026-10-09"
+  },
+  {
+   "id": "Sábado 10",
+   "fecha": "2026-10-10"
+  }
+ ],
+ "sobres": [
+  {
+   "num": 0,
+   "dia": "Jueves 8",
+   "hora": "10:00",
+   "lugar": "El hotel",
+   "titulo": "Prólogo: los Guardianes de la Luz",
+   "historia": [
+    "Berlín, 1806. Tras derrotar a Prusia, Napoleón ordena desmontar la Cuádriga de la Puerta de Brandeburgo y se la lleva a París como trofeo. Ocho años después, en 1814, los caballos de bronce regresan triunfales a Berlín.",
+    "Lo que nadie supo es que, durante el viaje de vuelta, un pequeño grupo de berlineses —los <b>Guardianes de la Luz</b>— escondió en el carro un secreto: una clave de <b>cuatro cifras</b> capaz de abrir el <b>Cofre de la Cuádriga</b>.",
+    "Para que nadie pudiera reunirla de golpe, la repartieron en tres épocas de la ciudad: la <b>época del fuego</b>, la <b>época de los vencedores</b> y la <b>época del muro</b>. La última cifra solo aparece cuando la luz vuelve a la Puerta.",
+    "Ahora vosotros sois los Guardianes. Tenéis tres días."
+   ],
+   "enigma": null,
+   "extras": [
+    {
+     "texto": "El Host custodia los sobres. Solo se abre uno nuevo cuando el anterior está resuelto.",
+     "tipo": "nota",
+     "foto": false
+    },
+    {
+     "texto": "Cada sobre trae un ENIGMA y un RUMBO: la pista para llegar al siguiente lugar.",
+     "tipo": "nota",
+     "foto": false
+    },
+    {
+     "texto": "Las cifras de la clave se anotan en la Tarjeta de Fragmentos. ¡No la perdáis!",
+     "tipo": "nota",
+     "foto": false
+    },
+    {
+     "texto": "Tenéis 3 Comodines para pedir ayuda al Host durante todo el juego.",
+     "tipo": "nota",
+     "foto": false
+    },
+    {
+     "texto": "En los retos fotográficos, el Host decide si la foto es digna de un Guardián.",
+     "tipo": "nota",
+     "foto": true
+    }
+   ],
+   "rumbo": "Salid del hotel. A pocos pasos, un cartel sigue avisando a quien abandona un sector que ya no existe. Id a leerlo.",
+   "mas_info": [
+    "La Puerta de Brandeburgo se construyó entre 1788 y 1791 según el diseño de Carl Gotthard Langhans, inspirada en los Propileos, la entrada monumental a la Acrópolis de Atenas. Era una de las puertas de la muralla aduanera que rodeaba Berlín.",
+    "La Cuádriga es obra del escultor Johann Gottfried Schadow (1793). En origen, la mujer que conduce el carro representaba a Eirene, diosa de la paz, entrando en la ciudad. Tras su regreso de París en 1814 se convirtió en Victoria, diosa de la victoria, y Schinkel le añadió la Cruz de Hierro y el águila prusiana.",
+    "La Cuádriga original quedó destrozada en 1945. La que vemos hoy es una copia fundida en Berlín Occidental en 1958 a partir de moldes de yeso tomados durante la guerra, y regalada al Este, donde estaba la Puerta. La RDA le quitó la cruz y el águila; volvieron a su sitio en la restauración de 1991.",
+    "El Festival of Lights se celebra cada octubre desde 2005: durante diez noches, decenas de monumentos de la ciudad se convierten en lienzos para proyecciones de luz."
+   ],
+   "ayudas": [
+    "«Es la frontera más famosa de la Guerra Fría.»",
+    "«Checkpoint Charlie, a 3 minutos por Friedrichstraße hacia el sur.»"
+   ],
+   "campos": [],
+   "accion": "aceptar"
+  },
+  {
+   "num": 1,
+   "dia": "Jueves 8",
+   "hora": "10:10",
+   "lugar": "Checkpoint Charlie",
+   "titulo": "Todo Guardián empieza en una frontera",
+   "historia": [
+    "Octubre de 1961. Durante dieciséis horas, tanques estadounidenses y soviéticos se apuntaron a pocos metros unos de otros en esta misma calle. El mundo contuvo la respiración.",
+    "Antes de buscar la primera cifra, todo Guardián debe aprender a cruzar fronteras."
+   ],
+   "enigma": "El gran cartel blanco avisa a quien se marcha del sector americano. ¿En cuántos idiomas lo hace?",
+   "extras": [
+    {
+     "texto": "RETO: foto con el retrato del soldado de la caja de luz, cada uno mirando hacia «su» lado.",
+     "tipo": "reto",
+     "foto": true
+    }
+   ],
+   "rumbo": "Antes de seguir, el Host os tiene preparada una parada dulce. Después, buscad una plaza donde dos templos gemelos —uno francés y otro alemán— se miran sin hablarse.",
+   "mas_info": [
+    "El nombre no tiene nada que ver con ningún Charlie: viene del alfabeto fonético de la OTAN. Era el tercer puesto de control aliado: Alpha estaba en Helmstedt, en la frontera entre las dos Alemanias; Bravo en Dreilinden, a la salida de Berlín Occidental; y Charlie aquí, en Friedrichstraße.",
+    "Era el paso reservado a extranjeros, diplomáticos y militares aliados; los alemanes no podían usarlo. Por eso fue escenario de espías, intercambios y fugas escondidas en maleteros y dobles fondos.",
+    "La crisis de octubre de 1961 empezó por un detalle: los guardias de la RDA exigieron la documentación a un diplomático estadounidense que iba al teatro en el Este. EE. UU. respondió escoltándole con soldados y, el 27 de octubre, unos diez tanques de cada bando quedaron frente a frente. Kennedy y Jruschov acordaron retirarlos poco a poco, casi tanque a tanque.",
+    "La caseta que veis es una réplica: la original está en el Museo de los Aliados, en el barrio de Dahlem. Los retratos de la caja de luz son obra del fotógrafo Frank Thiel: el soldado estadounidense mira hacia el Este y el soviético hacia el Oeste.",
+    "A pocos metros, en Zimmerstraße, una columna recuerda a Peter Fechter. En agosto de 1962, con 18 años, fue tiroteado al intentar saltar el Muro y se desangró en la franja de la muerte durante casi una hora, a la vista de todos, sin que nadie le socorriera."
+   ],
+   "ayudas": [
+    "«Contad los alfabetos… y ojo, que uno no es latino.»",
+    "«Inglés, ruso, francés y…»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "Número de idiomas"
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "dia": "Jueves 8",
+   "hora": "11:00",
+   "lugar": "Gendarmenmarkt",
+   "titulo": "Dos templos y un poeta",
+   "historia": [
+    "En el siglo XVII Berlín acogió a miles de hugonotes franceses que huían de la persecución religiosa. Uno de estos dos templos fue el suyo.",
+    "Entre ambos se levanta un teatro; y delante del teatro, un poeta de mármol vigila la plaza."
+   ],
+   "enigma": "¿Cómo se llama el poeta de la estatua?",
+   "extras": [
+    {
+     "texto": "RETO: foto en el centro exacto de la plaza, con una cúpula a cada lado.",
+     "tipo": "reto",
+     "foto": true
+    }
+   ],
+   "rumbo": "Id hacia el norte, hacia la gran avenida de los tilos. Poco antes, una plaza en la que una noche de mayo ardió el saber. Buscad en el suelo una ventana que da al vacío.",
+   "mas_info": [
+    "El nombre de la plaza viene de los Gens d'armes, un regimiento de caballería prusiano que tuvo aquí sus establos en el siglo XVIII.",
+    "En 1685, con el Edicto de Potsdam, Prusia abrió sus puertas a los hugonotes, protestantes franceses perseguidos por Luis XIV. Llegaron por miles: hacia 1700, casi uno de cada cinco berlineses era francés. De ellos vienen palabras que aún usan los berlineses y una larga tradición de artesanos y comerciantes.",
+    "Curiosidad: las torres con cúpula que dan nombre a los «Dom» no son catedrales. Las iglesias son de principios del siglo XVIII; las torres se las añadió Federico el Grande entre 1780 y 1785 por pura estética, y el nombre viene del francés dôme, cúpula. En la francesa hay un pequeño museo de los hugonotes.",
+    "El Konzerthaus, en el centro, es obra de Karl Friedrich Schinkel (1821) y se levantó como teatro tras un incendio. La estatua de Schiller, de 1871, fue retirada por los nazis y no volvió a la plaza hasta 1988."
+   ],
+   "ayudas": [
+    "«Mirad el pedestal.»",
+    "«Escribió la Oda a la Alegría que Beethoven puso en su Novena.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "Nombre del poeta"
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "dia": "Jueves 8",
+   "hora": "11:40",
+   "lugar": "Bebelplatz",
+   "titulo": "La época del fuego · PRIMERA CIFRA",
+   "historia": [
+    "10 de mayo de 1933. En esta plaza, estudiantes y miembros de las SA arrojaron al fuego miles de libros de autores prohibidos por el nazismo.",
+    "Hoy, bajo un cristal en el suelo, una biblioteca de estanterías blancas y vacías recuerda lo que se perdió. Los Guardianes escondieron aquí la primera cifra, junto a las palabras de un poeta que lo había predicho más de un siglo antes."
+   ],
+   "enigma": "Buscad la placa con la cita de Heinrich Heine. En ella aparece la palabra alemana que significa «personas». Contad sus letras: esa es la <b>PRIMERA CIFRA</b>.",
+   "extras": [
+    {
+     "texto": "PREGUNTA DE HONOR: ¿qué falta en la biblioteca del suelo?",
+     "tipo": "honor",
+     "foto": false
+    }
+   ],
+   "rumbo": "Cruzad la avenida Unter den Linden. Un pequeño templo de columnas guarda a una madre y a su hijo bajo un cielo sin cristal.",
+   "mas_info": [
+    "La plaza formaba parte del Foro Federiciano, el gran conjunto con el que Federico el Grande quiso convertir Berlín en una capital de las artes: la Ópera Estatal (1742), la catedral católica de Santa Eduvigis, inspirada en el Panteón de Roma, y la antigua Biblioteca Real, que los berlineses apodan «la Cómoda» por la forma curva de su fachada.",
+    "La quema del 10 de mayo de 1933 la organizó la Unión de Estudiantes Alemanes, con un discurso de Goebbels, y esa misma noche se repitió en más de veinte ciudades universitarias. Ardieron libros de Heinrich Mann, Freud, Marx, Tucholsky o Erich Kästner. Kästner estaba entre el público y vio arder sus propios libros.",
+    "El memorial «Biblioteca» (1995), del artista israelí Micha Ullman, es una sala subterránea de estanterías blancas y vacías con espacio para unos 20.000 libros, aproximadamente los que se quemaron aquí. De noche se ilumina desde dentro.",
+    "Un detalle muy nuestro: la frase de Heine pertenece a su tragedia Almansor (1821), y en ella un personaje se refiere a la quema del Corán en Granada tras la conquista cristiana. Heine, de familia judía, fue uno de los autores cuyos libros ardieron en 1933."
+   ],
+   "ayudas": [
+    "«En alemán, 'persona' es Mensch… pero la placa habla en plural.»",
+    "«La palabra es Menschen. Contad.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "Primera cifra",
+     "cifra": 1
+    },
+    {
+     "id": "h",
+     "tipo": "honor",
+     "modo": "keywords",
+     "etiqueta": "Pregunta de honor: ¿qué falta en la biblioteca?"
+    }
+   ],
+   "cifra": 1
+  },
+  {
+   "num": 4,
+   "dia": "Jueves 8",
+   "hora": "12:10",
+   "lugar": "Neue Wache",
+   "titulo": "La madre bajo el cielo abierto",
+   "historia": [
+    "Fue el cuerpo de guardia de los reyes de Prusia. Hoy es el monumento de Alemania a las víctimas de la guerra y la tiranía.",
+    "Entrad en silencio. Dentro solo hay una figura y un hueco abierto al cielo, por el que entran la lluvia y la nieve."
+   ],
+   "enigma": "¿Qué artista esculpió a la madre que abraza a su hijo muerto?",
+   "extras": [
+    {
+     "texto": "PISTA DE GUARDIÁN: la información está en la entrada.",
+     "tipo": "pista",
+     "foto": false
+    }
+   ],
+   "rumbo": "Es hora de reponer fuerzas: el Host os guiará a comer y, de sobremesa, a un café vienés de la avenida de los tilos. Después, seguid la avenida hacia el este, cruzad el río hacia la isla y buscad el museo que pasó sesenta años en ruinas. Dentro os espera una reina.",
+   "mas_info": [
+    "La Neue Wache, Nueva Guardia, fue la primera gran obra de Schinkel en Berlín (1816-1818). Era el cuerpo de guardia del palacio del rey, y su forma recuerda a un campamento militar romano.",
+    "Ha cambiado de significado con cada régimen: en 1931 se convirtió en monumento a los caídos de la Primera Guerra Mundial; en la RDA, en «monumento a las víctimas del fascismo y el militarismo», con llama eterna y cambio de guardia a paso de la oca; y desde 1993 es el memorial central de Alemania a las víctimas de la guerra y la tiranía.",
+    "La escultura es una ampliación de una pequeña obra de Käthe Kollwitz, de menos de 40 cm. Kollwitz perdió a su hijo Peter en octubre de 1914, en los primeros meses de la Primera Guerra Mundial, y pasó años trabajando sobre ese dolor.",
+    "Bajo el suelo descansan los restos de un soldado desconocido y de un prisionero desconocido de un campo de concentración, junto con tierra de campos de batalla y de campos de concentración."
+   ],
+   "ayudas": [
+    "«Es una mujer, grabadora y escultora berlinesa; perdió a su hijo en la I Guerra Mundial.»",
+    "«Käthe K…»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "Artista"
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "dia": "Jueves 8",
+   "hora": "15:00",
+   "lugar": "Neues Museum",
+   "titulo": "La reina tuerta y los cinco tesoros",
+   "historia": [
+    "El Neues Museum abrió a mediados del siglo XIX. Las bombas de la Segunda Guerra Mundial lo dejaron en ruinas y así siguió durante más de sesenta años, en el lado Este de la ciudad.",
+    "En 2009 reabrió tras una restauración del arquitecto David Chipperfield, que decidió no esconder las heridas: ladrillo nuevo junto a muros quemados y paredes marcadas por la metralla.",
+    "Los Guardianes os ponen aquí una prueba de paciencia: cinco tesoros en noventa minutos. Pedid el plano en la entrada."
+   ],
+   "enigma": "TESORO 1 · La reina más famosa de Egipto lleva más de 3.300 años mirando al frente… pero no con los dos ojos. ¿Qué le falta a Nefertiti?",
+   "extras": [
+    {
+     "texto": "TESORO 2 · El sombrero de oro de Berlín: un cono de oro de casi 3.000 años cubierto de símbolos. ¿Qué creen los expertos que esconden esos símbolos?",
+     "tipo": "tesoro",
+     "foto": false
+    },
+    {
+     "texto": "TESORO 3 · El oro de Troya: Schliemann creyó haber encontrado el tesoro del rey Príamo. ¿En qué ciudad está hoy la mayor parte de las piezas originales?",
+     "tipo": "tesoro",
+     "foto": false
+    },
+    {
+     "texto": "TESORO 4 · El neandertal de Le Moustier: un cráneo de unos 45.000 años. ¿En qué país se encontró?",
+     "tipo": "tesoro",
+     "foto": false
+    },
+    {
+     "texto": "TESORO 5 · Las cicatrices: buscad en paredes y columnas las marcas de la guerra. RETO: foto de los dos junto a una de ellas.",
+     "tipo": "tesoro",
+     "foto": true
+    },
+    {
+     "texto": "AVISO: en la sala de Nefertiti no se pueden hacer fotos.",
+     "tipo": "aviso",
+     "foto": false
+    }
+   ],
+   "rumbo": "Al salir, seguid hacia la aguja que pincha el cielo. Por el camino, un tostadero os dará aroma para el resto de la tarde. A sus pies, en la gran plaza del Este, un reloj da la hora de todo el mundo a la vez.",
+   "mas_info": [
+    "El busto de Nefertiti apareció en 1912 en Amarna, en el taller del escultor Tutmosis, durante una excavación alemana dirigida por Ludwig Borchardt. Llegó a Berlín en 1913 y Egipto ha reclamado su devolución en varias ocasiones. La teoría más extendida sobre el ojo que falta es que era un modelo de taller y nunca llegó a terminarse.",
+    "El sombrero de oro de Berlín, de la Edad del Bronce, es uno de los pocos sombreros ceremoniales de oro que se conocen. Mide unos 75 cm de alto y sus bandas de símbolos se interpretan como un calendario que permitía seguir los ciclos del Sol y la Luna.",
+    "Schliemann regaló a Berlín su colección de Troya en 1881. En 1945 el Ejército Rojo se llevó el oro a Moscú, y durante décadas se dio por perdido hasta que reapareció en los años noventa en el Museo Pushkin. Ironía añadida: el «tesoro de Príamo» es en realidad mucho más antiguo que la guerra de Troya de Homero.",
+    "El cráneo de Le Moustier se descubrió en 1908 en la Dordoña francesa y es uno de los neandertales más famosos del mundo.",
+    "Chipperfield no quiso ni reconstruir el museo como si nada hubiera pasado ni dejarlo como ruina: completó los huecos con ladrillo nuevo y conservó frescos dañados, columnas quemadas y marcas de metralla. Así, el propio edificio es una pieza más de la colección."
+   ],
+   "ayudas": [
+    "«Miradla de frente y fijaos en sus ojos.»",
+    "«Uno de los dos está vacío.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "Tesoro 1: ¿qué le falta a Nefertiti?"
+    },
+    {
+     "id": "t2",
+     "tipo": "tesoro",
+     "modo": "keywords",
+     "etiqueta": "Tesoro 2: ¿qué esconden los símbolos?"
+    },
+    {
+     "id": "t3",
+     "tipo": "tesoro",
+     "modo": "keywords",
+     "etiqueta": "Tesoro 3: ¿en qué ciudad están?"
+    },
+    {
+     "id": "t4",
+     "tipo": "tesoro",
+     "modo": "keywords",
+     "etiqueta": "Tesoro 4: ¿en qué país se encontró?"
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "dia": "Jueves 8",
+   "hora": "17:10",
+   "lugar": "Alexanderplatz",
+   "titulo": "La hora de todo el mundo",
+   "historia": [
+    "Inaugurado en 1969, el Reloj Mundial fue el punto de encuentro de los berlineses del Este: un lugar desde el que «viajar» a ciudades a las que casi nunca podían ir."
+   ],
+   "enigma": "¿En cuántas caras se reparte el mundo en este reloj?",
+   "extras": [
+    {
+     "texto": "RETO: foto de los dos imitando a los planetas que giran en lo alto.",
+     "tipo": "reto",
+     "foto": true
+    }
+   ],
+   "rumbo": "Buscad el ayuntamiento que es rojo por su ladrillo, no por su política. Detrás empieza el barrio más antiguo de Berlín, con una iglesia de dos torres puntiagudas.",
+   "mas_info": [
+    "La plaza debe su nombre al zar Alejandro I de Rusia, que visitó Berlín en 1805. A finales de los años veinte inspiró la novela «Berlin Alexanderplatz», de Alfred Döblin.",
+    "El Reloj Mundial fue diseñado por Erich John y se inauguró en 1969, en plena RDA. Quedar «bajo el reloj» sigue siendo hoy una de las citas clásicas de los berlineses.",
+    "La Torre de Televisión, de 368 metros, es el edificio más alto de Alemania y también se terminó en 1969. Cuando le da el sol, en la esfera aparece el reflejo de una cruz: los berlineses lo llamaron «la venganza del Papa», para disgusto de un régimen oficialmente ateo.",
+    "El 4 de noviembre de 1989, cinco días antes de la caída del Muro, cientos de miles de personas se reunieron aquí para pedir libertad de expresión y reformas: fue la mayor manifestación de la historia de la RDA."
+   ],
+   "ayudas": [
+    "«Tantas como horas tiene un día.»",
+    "«24.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "Número de caras"
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "dia": "Jueves 8",
+   "hora": "18:00",
+   "lugar": "Nikolaiviertel",
+   "titulo": "Donde nació Berlín",
+   "historia": [
+    "Aquí nació la ciudad, hace casi 800 años. La iglesia de San Nicolás es la más antigua de Berlín, aunque buena parte de lo que veis es una reconstrucción de 1987, hecha para el 750 aniversario."
+   ],
+   "enigma": "Contad las torres de la iglesia de San Nicolás y multiplicad por la primera cifra que ya tenéis. ¿Qué número sale?",
+   "extras": [
+    {
+     "texto": "RECOMPENSA: tiempo libre de Guardianes. Una cerveza o un café por el barrio.",
+     "tipo": "recompensa",
+     "foto": false
+    }
+   ],
+   "rumbo": "Antes de las 20:00, bajad a la orilla del río. Allí un caballero lleva más de siglo y medio luchando contra un dragón. Encontradle.",
+   "mas_info": [
+    "Berlín nació como dos ciudades gemelas, Berlín y Cölln, a ambos lados del río Spree. La primera mención escrita de Cölln es de 1237, y por eso en 1987 se celebró el 750 aniversario… por duplicado: en el Este y en el Oeste, cada uno por su lado.",
+    "Para ese aniversario, la RDA reconstruyó el Nikolaiviertel, arrasado en la guerra. Lo hizo en parte con paneles prefabricados de hormigón disfrazados de casas antiguas, y algunos edificios son copias de otros que estuvieron en otro lugar de la ciudad.",
+    "La iglesia de San Nicolás se empezó hacia 1230. Sus dos agujas no son medievales: se añadieron en una restauración de la década de 1870. Hoy es un museo.",
+    "El Ayuntamiento Rojo (1861-1869) es la sede del alcalde de Berlín. Su nombre se debe al ladrillo, aunque la broma sobre la política fue inevitable cuando quedó en el Este. Alrededor del edificio hay un friso de terracota que narra la historia de la ciudad."
+   ],
+   "ayudas": [
+    "«Mirad hacia arriba: agujas gemelas.»",
+    "«2 × vuestra primera cifra.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "Resultado"
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "dia": "Jueves 8",
+   "hora": "19:45",
+   "lugar": "San Jorge y el dragón",
+   "titulo": "El caballero os invita",
+   "historia": [
+    "San Jorge, el caballero que venció al dragón, es patrón de guerreros y guardianes. El protector perfecto para cerrar vuestro primer día.",
+    "Fin de la primera jornada. Una cifra en vuestro poder. Mañana viajaréis a la ciudad de los reyes… y de los vencedores."
+   ],
+   "enigma": "El caballero os invita a cenar esta noche en su casa. ¿Cómo se llama la casa?",
+   "extras": [],
+   "rumbo": "Entrad. Mesa reservada a las 20:00. ¡Prost!",
+   "mas_info": [
+    "La escultura de San Jorge y el dragón es obra de August Kiss, un escultor del siglo XIX. Estuvo en uno de los patios del Palacio Real; después de la guerra pasó a un parque y en 1987 llegó a esta orilla del Spree.",
+    "Georgbräu es una cervecería que elabora su propia cerveza. Buena ocasión para probar cocina berlinesa: el Eisbein (codillo de cerdo cocido), la Currywurst o una Berliner Weisse.",
+    "La Currywurst se inventó en Berlín en 1949: Herta Heuwer, dueña de un puesto en Charlottenburg, mezcló kétchup, curry y otras especias que consiguió de soldados británicos.",
+    "La Berliner Weisse es una cerveza de trigo ácida que se bebe tradicionalmente «mit Schuss», con un chorro de sirope de frambuesa (roja) o de aspérula (verde), y a veces con pajita."
+   ],
+   "ayudas": [
+    "«¿Cómo se dice Jorge en alemán?»",
+    "«Georg… + la palabra para cervecería.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "Nombre de la casa"
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "dia": "Viernes 9",
+   "hora": "10:20",
+   "lugar": "En el tren a Potsdam",
+   "titulo": "La ciudad de los reyes y los vencedores",
+   "historia": [
+    "Potsdam fue la residencia de los reyes de Prusia. Allí Federico el Grande —músico, filósofo y amigo de Voltaire— construyó un palacio sobre un viñedo para vivir lejos de la corte.",
+    "Casi dos siglos después, en el verano de 1945, los vencedores de la Segunda Guerra Mundial eligieron Potsdam para decidir el futuro de Alemania. Hoy seguiréis las dos huellas."
+   ],
+   "enigma": "Federico escribía y hablaba mejor en francés que en alemán. Bautizó su palacio con dos palabras francesas que significan «sin preocupaciones». ¿Cuáles son?",
+   "extras": [],
+   "rumbo": "Al bajar del tren, conseguid dos corceles de acero con ruedas. Pedalead hacia el norte, hasta un Jardín Nuevo junto a un lago sagrado. Allí os espera una casa de campo inglesa donde se repartió el mundo.",
+   "mas_info": [
+    "Potsdam fue la gran ciudad residencial y militar de los reyes de Prusia. Sus palacios y jardines son Patrimonio de la Humanidad desde 1990.",
+    "Federico II el Grande (1712-1786) fue un rey contradictorio: guerrero incansable, pero también flautista y compositor de más de cien sonatas, filósofo aficionado y amigo de Voltaire, que vivió en su corte entre 1750 y 1753… hasta que acabaron peleados.",
+    "En Potsdam se firmó en 1685 el Edicto que acogió a los hugonotes que vimos en Gendarmenmarkt, y aquí, en 1933, Hitler escenificó el «Día de Potsdam» estrechando la mano de Hindenburg para presentarse como heredero de la tradición prusiana."
+   ],
+   "ayudas": [
+    "«Sans = sin.»",
+    "«Sans… souci.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "Las dos palabras"
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "dia": "Viernes 9",
+   "hora": "11:30",
+   "lugar": "Palacio de Cecilienhof",
+   "titulo": "La época de los vencedores · SEGUNDA CIFRA",
+   "historia": [
+    "Del 17 de julio al 2 de agosto de 1945, este palacio de aire inglés —el último que construyeron los Hohenzollern— acogió la Conferencia de Potsdam.",
+    "Allí se decidió cómo ocupar Alemania, cómo juzgar a sus dirigentes y dónde trazar las nuevas fronteras. Los soviéticos plantaron en el patio un parterre de flores rojas que todavía hoy se conserva."
+   ],
+   "enigma": "<b>SEGUNDA CIFRA:</b> ¿cuántas potencias vencedoras se sentaron a la mesa de la conferencia?<br/><br/><b>Y ADEMÁS:</b> buscad el parterre del patio. ¿Qué símbolo dibujan sus flores?",
+   "extras": [
+    {
+     "texto": "PREGUNTA DE HONOR: empezaron tres líderes, pero uno fue sustituido a mitad de la conferencia tras perder las elecciones en su país. ¿Quién entró en su lugar?",
+     "tipo": "honor",
+     "foto": false
+    }
+   ],
+   "rumbo": "Pedalead de vuelta hacia el centro de la ciudad, hasta un barrio de casas de ladrillo rojo que parece trasladado desde otro país. Allí se come.",
+   "mas_info": [
+    "Cecilienhof se construyó entre 1914 y 1917 para el príncipe heredero Guillermo y su esposa Cecilia de Mecklemburgo. Imita una casa de campo inglesa de estilo Tudor y tiene unas 176 habitaciones. Fue el último palacio construido por los Hohenzollern.",
+    "En la conferencia (17 de julio – 2 de agosto de 1945) se sentaron Truman, Stalin y Churchill. Pero Churchill perdió las elecciones británicas en plena conferencia y desde el 28 de julio le sustituyó Clement Attlee. Se negociaba en torno a una gran mesa redonda que todavía se conserva.",
+    "Los acuerdos fijaron las «cuatro D» para Alemania: desnazificación, desmilitarización, democratización y descentralización. También la nueva frontera con Polonia en los ríos Óder y Neisse, y la expulsión de millones de alemanes del Este.",
+    "El 24 de julio, Truman comentó a Stalin que EE. UU. tenía una nueva arma de enorme poder. Dos días después se lanzó desde aquí la Declaración de Potsdam, el ultimátum a Japón. El 6 de agosto, cuatro días después de terminar la conferencia, cayó la bomba sobre Hiroshima."
+   ],
+   "ayudas": [
+    "«Truman, Churchill y Stalin: contad sus países.»",
+    "«Las flores son rojas… pensad en quién las plantó.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "Segunda cifra: potencias vencedoras",
+     "cifra": 2
+    },
+    {
+     "id": "b",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "Símbolo del parterre"
+    },
+    {
+     "id": "h",
+     "tipo": "honor",
+     "modo": "keywords",
+     "etiqueta": "Pregunta de honor: ¿quién entró en su lugar?"
+    }
+   ],
+   "cifra": 2
+  },
+  {
+   "num": 11,
+   "dia": "Viernes 9",
+   "hora": "13:15",
+   "lugar": "Barrio Holandés",
+   "titulo": "Ladrillo rojo de otro país",
+   "historia": [
+    "El Rey Sargento, padre de Federico el Grande, quiso atraer a Potsdam a artesanos extranjeros y mandó construir para ellos este barrio de casas de ladrillo con frontones."
+   ],
+   "enigma": "¿De qué país venían los artesanos para los que se construyeron estas casas?",
+   "extras": [],
+   "rumbo": "Comed tranquilos en el café histórico de la puerta de la ciudad, y no os vayáis sin pasar por la casa de las tartas de queso del barrio. Después, recuperad los corceles y pedalead hasta el palacio sobre el viñedo: el rey no os abrirá sus salones, pero os espera en su terraza.",
+   "mas_info": [
+    "El barrio se construyó entre 1733 y 1742 por orden de Federico Guillermo I, el «Rey Sargento». Son 134 casas de ladrillo rojo con frontones, repartidas en cuatro manzanas: el mayor conjunto de arquitectura holandesa fuera de los Países Bajos.",
+    "La ironía: vinieron muchos menos holandeses de los que el rey esperaba, y muchas casas acabaron ocupadas por artesanos de otros lugares y por soldados.",
+    "El Rey Sargento estaba obsesionado con su ejército y, en particular, con los «Lange Kerls» (los «tipos largos»), un regimiento de soldados altísimos que reclutaba por toda Europa, a veces a la fuerza.",
+    "Hoy es la zona más animada de Potsdam, llena de cafés, tiendas y restaurantes."
+   ],
+   "ayudas": [
+    "«Mirad el nombre del barrio en el mapa.»",
+    "«Holländisches Viertel.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "País"
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "dia": "Viernes 9",
+   "hora": "14:30",
+   "lugar": "Palacio de Sanssouci (exterior)",
+   "titulo": "El palacio sin preocupaciones",
+   "historia": [
+    "Federico pasaba aquí los veranos con sus perros, su flauta y sus filósofos. Pidió ser enterrado en esta terraza, sin pompa. Tuvo que esperar: sus restos no llegaron aquí hasta 1991."
+   ],
+   "enigma": "Colocaos de espaldas a la fachada y mirad hacia la gran fuente del jardín. ¿Cuántas terrazas escalonadas de viñedo separan el palacio del jardín?",
+   "extras": [
+    {
+     "texto": "PREGUNTA DE HONOR: el rey mandó escribir el nombre del palacio en la fachada con un signo de puntuación inesperado entre las dos palabras. ¿Cuál es?",
+     "tipo": "honor",
+     "foto": false
+    },
+    {
+     "texto": "RETO: foto de los dos en lo alto de la escalinata, con las terrazas a vuestros pies.",
+     "tipo": "reto",
+     "foto": true
+    }
+   ],
+   "rumbo": "Ahora recorred la terraza superior hasta su extremo, junto al palacio. Allí el rey descansa por fin… rodeado de ofrendas muy poco reales.",
+   "mas_info": [
+    "Sanssouci se construyó entre 1745 y 1747 por el arquitecto Georg Wenzeslaus von Knobelsdorff, a partir de bocetos del propio Federico. Es un palacio sorprendentemente pequeño, de una sola planta: el rey lo quería como refugio de verano, no como palacio de representación.",
+    "Las seis terrazas curvas de la ladera estaban plantadas de viñas y higueras, protegidas con cristaleras. En la fachada, el nombre aparece escrito con una coma entre las dos palabras; nadie sabe con certeza por qué, y hay varias teorías.",
+    "La gran fuente del pie de las terrazas esconde una ironía: Federico soñaba con un surtidor gigante, pero los ingenieros de su época nunca consiguieron subir el agua y el rey murió sin verlo funcionar. No brotó hasta 1842, gracias a una máquina de vapor escondida en una estación de bombeo disfrazada de mezquita, junto al río Havel.",
+    "Federico murió en Sanssouci el 17 de agosto de 1786, sentado en un sillón. Pidió ser enterrado en la terraza junto a sus perros, pero su sobrino le dio sepultura en una iglesia de Potsdam. Tras un largo periplo durante y después de la Segunda Guerra Mundial, sus restos llegaron aquí el 17 de agosto de 1991, 205 años después de su muerte, en una ceremonia nocturna."
+   ],
+   "ayudas": [
+    "«Contadlas de arriba abajo, siguiendo la escalinata central.»",
+    "«Más de cinco y menos de siete.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "Número de terrazas"
+    },
+    {
+     "id": "h",
+     "tipo": "honor",
+     "modo": "keywords",
+     "etiqueta": "Pregunta de honor: signo de puntuación"
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "dia": "Viernes 9",
+   "hora": "15:00",
+   "lugar": "Tumba de Federico y molino",
+   "titulo": "Patatas y jueces · TERCERA CIFRA",
+   "historia": [
+    "Federico obligó a los campesinos prusianos a cultivar un tubérculo llegado de América que nadie quería comer. Hoy los visitantes le dan las gracias a su manera.",
+    "Junto al palacio hay un molino. Cuenta la leyenda que el rey quiso comprarlo porque le molestaba el ruido, pero el molinero se negó.",
+    "Los Guardianes escondieron la tercera cifra en el molino que desafió al rey: la justicia gira, aunque no siempre sople a favor."
+   ],
+   "enigma": "1) ¿Qué ofrenda cubre la lápida del rey? ¿Quién descansa a su lado?<br/><br/>2) El molinero amenazó al rey con llevarle ante… ¿quiénes? (Pista: todavía los hay en Berlín.)<br/><br/>3) <b>TERCERA CIFRA:</b> acercaos al molino. ¿Cuántas aspas tiene?",
+   "extras": [],
+   "rumbo": "Recuperad los corceles y recorred el parque por los caminos permitidos. Buscad una casita dorada donde los músicos parecen venir de muy lejos, de Oriente.",
+   "mas_info": [
+    "En 1756 Federico firmó la «Orden de la patata», que obligaba a cultivarla. Según la leyenda, viendo que nadie la quería, hizo vigilar los campos reales para que los campesinos pensaran que era algo valioso… y la robaran.",
+    "Su lápida es muy sencilla, con un único nombre: «Friedrich der Grosse». A su lado están las lápidas de sus galgos, sus compañeros favoritos.",
+    "La leyenda del molinero se popularizó con un poema francés de 1797 y su frase «aún hay jueces en Berlín» se convirtió en proverbio: incluso el rey estaba sometido a la ley.",
+    "El molino actual no es el original: se quemó en 1945 y se reconstruyó a principios de los años noventa. Se puede subir a su galería."
+   ],
+   "ayudas": [
+    "«Son tubérculos; los hay fritos, cocidos o en tortilla.»",
+    "«El rey tuvo que aceptar que la justicia estaba por encima de él.» Para la cifra: «Contad los brazos que giran con el viento.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "1) Ofrenda sobre la lápida"
+    },
+    {
+     "id": "h",
+     "tipo": "honor",
+     "modo": "keywords",
+     "etiqueta": "1) ¿Quién descansa a su lado? (honor)"
+    },
+    {
+     "id": "b",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "2) ¿Ante quiénes?"
+    },
+    {
+     "id": "c",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "3) Tercera cifra: aspas del molino",
+     "cifra": 3
+    }
+   ],
+   "cifra": 3
+  },
+  {
+   "num": 14,
+   "dia": "Viernes 9",
+   "hora": "15:45",
+   "lugar": "La Casa China",
+   "titulo": "Oriente soñado",
+   "historia": [
+    "En el siglo XVIII estaba de moda soñar con China sin haberla visto nunca. Federico mandó construir este pabellón de té, rodeado de músicos y bebedores dorados.",
+    "Fin de la segunda jornada: tres cifras de cuatro. Mañana, la última época."
+   ],
+   "enigma": "Elegid vuestra figura dorada favorita. ¿Qué instrumento toca o qué está haciendo?",
+   "extras": [
+    {
+     "texto": "RETO: foto de los dos imitando a esa figura. El Host juzga.",
+     "tipo": "reto",
+     "foto": true
+    }
+   ],
+   "rumbo": "Seguid pedaleando hacia el oeste hasta el palacio más grande del parque. Antes de que caiga la luz, volved hacia la estación: por el camino, una librería de la ciudad os espera.",
+   "mas_info": [
+    "La Casa China se construyó entre 1755 y 1764 según los planos de Johann Gottfried Büring. Era un pabellón de té, y sus figuras doradas de arenisca muestran a músicos y personajes tomando té o frutas. Dentro se expone una colección de porcelana.",
+    "La «chinoiserie» era la gran moda europea del siglo XVIII: una China imaginada, con muy poco que ver con la real, que se plasmaba en jardines, pabellones y vajillas.",
+    "Al final del eje del parque está el Palacio Nuevo (1763-1769), enorme. Federico lo construyó nada más terminar la Guerra de los Siete Años, sin necesitarlo, para demostrar a Europa que Prusia no estaba arruinada. Él mismo lo llamó una «fanfarronada».",
+    "El parque de Sanssouci tiene unas 290 hectáreas, unas 400 veces la superficie de un campo de fútbol."
+   ],
+   "ayudas": [
+    "(No hace falta.)",
+    "(No hace falta.)"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "libre",
+     "etiqueta": "Vuestra figura"
+    }
+   ]
+  },
+  {
+   "num": 15,
+   "dia": "Sábado 10",
+   "hora": "09:30",
+   "lugar": "El hotel",
+   "titulo": "La época del muro",
+   "historia": [
+    "13 de agosto de 1961. Berlín amaneció partida en dos. Durante años, un muro de hormigón separó familias, calles y hasta edificios.",
+    "Hoy recorreréis su herida, de norte a este. Y esta noche, la luz."
+   ],
+   "enigma": "¿Cuántos años estuvo en pie el Muro de Berlín?",
+   "extras": [],
+   "rumbo": "Caminad hacia el norte por Friedrichstraße hasta la gran estación. Junto a ella, un pabellón de cristal guarda el recuerdo de miles de despedidas: lo llamaban el Palacio de las Lágrimas. A las 10:00 os espera allí un guía que os llevará hasta el Muro. El Host volverá a abrir el expediente cuando termine el recorrido.",
+   "mas_info": [
+    "En junio de 1961, el dirigente de la RDA Walter Ulbricht declaró en una rueda de prensa: «Nadie tiene la intención de levantar un muro». Dos meses después, en la noche del 12 al 13 de agosto, soldados y obreros cerraron la frontera con alambre de espino.",
+    "El Muro rodeaba por completo Berlín Occidental: unos 155 km, de los que unos 43 atravesaban la ciudad. Al menos 140 personas murieron en él.",
+    "Cayó el 9 de noviembre de 1989 casi por accidente. En una rueda de prensa, el portavoz Günter Schabowski leyó las nuevas normas de viaje y, al preguntarle desde cuándo regían, respondió: «Según tengo entendido… inmediatamente». Esa noche, miles de berlineses se agolparon en los pasos fronterizos.",
+    "El Palacio de las Lágrimas (Tränenpalast) era el pabellón de salida de la estación de Friedrichstraße hacia el Oeste. Aquí se despedían quienes podían viajar de los que tenían que quedarse. Hoy es un museo gratuito sobre la vida en la frontera."
+   ],
+   "ayudas": [
+    "«Cayó en 1989.»",
+    "«1989 − 1961.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "Años"
+    }
+   ]
+  },
+  {
+   "num": 16,
+   "dia": "Sábado 10",
+   "hora": "13:30",
+   "lugar": "Memorial del Muro, Bernauer Straße",
+   "titulo": "La franja de la muerte",
+   "historia": [
+    "Bernauer Straße es uno de los pocos lugares donde se ve la franja fronteriza completa: muro exterior, camino de vigilancia, torre y muro interior.",
+    "Acabáis de recorrerla con el guía. Ahora toca demostrar que habéis estado atentos: en la franja quedó atrapada una iglesia, sin fieles y sin paso."
+   ],
+   "enigma": "El régimen dinamitó esa iglesia. En su lugar se alza hoy una capilla. ¿En qué año la volaron?",
+   "extras": [
+    {
+     "texto": "MISIÓN: encontrad la «Ventana del Recuerdo», con los rostros de las víctimas, si el guía no os ha llevado ya.",
+     "tipo": "mision",
+     "foto": false
+    },
+    {
+     "texto": "RETO: foto de los dos en la franja de la muerte, con el muro detrás.",
+     "tipo": "reto",
+     "foto": true
+    }
+   ],
+   "rumbo": "Primero, reponed fuerzas por el barrio y dejaos tentar por una tienda de instrumentos que suenan a otro mundo. Después, subid al tranvía hacia el este y bajad junto a una librería con nombre de dramaturgo inglés. Desde allí, a pie hasta el río: el propio muro se convirtió en la galería de arte al aire libre más larga del mundo.",
+   "mas_info": [
+    "En Bernauer Straße la frontera pasaba literalmente por la fachada: los edificios estaban en el Este y la acera en el Oeste. En los primeros días, muchos vecinos saltaron por las ventanas a las redes de los bomberos occidentales. Ida Siekmann murió al saltar el 22 de agosto de 1961; fue una de las primeras víctimas del Muro.",
+    "El 15 de agosto de 1961, en la esquina con Ruppiner Straße, el soldado de la RDA Conrad Schumann saltó la alambrada hacia el Oeste. La foto de ese salto es una de las imágenes más famosas de la Guerra Fría.",
+    "Bajo esta calle se excavaron varios túneles de fuga. Por el más famoso, el «Túnel 57», escaparon 57 personas en octubre de 1964.",
+    "La Iglesia de la Reconciliación quedó atrapada en la franja de la muerte, inaccesible para sus fieles, y el régimen la dinamitó en enero de 1985. En 2000 se levantó en su lugar la Capilla de la Reconciliación, construida con barro apisonado en el que se mezclaron fragmentos de la iglesia antigua."
+   ],
+   "ayudas": [
+    "«Fue pocos años antes de la caída del Muro.»",
+    "«Década de los 80… mediados.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "Año"
+    }
+   ]
+  },
+  {
+   "num": 17,
+   "dia": "Sábado 10",
+   "hora": "16:20",
+   "lugar": "East Side Gallery",
+   "titulo": "El arte derriba muros",
+   "historia": [
+    "En 1990, más de un centenar de artistas de todo el mundo pintaron más de un kilómetro del Muro junto al río Spree."
+   ],
+   "enigma": "Buscad el pequeño coche del Este que atraviesa el hormigón. Su matrícula es una fecha. ¿Qué ocurrió ese día?",
+   "extras": [
+    {
+     "texto": "RETO 1: selfie en el que parezca que empujáis el coche para ayudarle a romper el muro.",
+     "tipo": "reto",
+     "foto": true
+    },
+    {
+     "texto": "RETO 2: foto ante el famoso beso entre dos dirigentes comunistas.",
+     "tipo": "reto",
+     "foto": true
+    }
+   ],
+   "rumbo": "Cruzad el puente de ladrillo rojo con dos torres que antes separaba dos mundos. Luego volved al cuartel general: el Host os dará la siguiente orden a las 18:10.",
+   "mas_info": [
+    "Es el tramo de Muro más largo que se conserva, de unos 1,3 km. En 1990 lo pintaron 118 artistas de 21 países, y en 2009 se restauró, con muchos de los artistas repintando sus propias obras.",
+    "El famoso beso es «Dios mío, ayúdame a sobrevivir a este amor mortal», de Dmitri Vrúbel. Recrea una foto real de 1979: el «beso fraternal socialista» entre Leonid Bréznev y Erich Honecker.",
+    "El Trabant que atraviesa el muro («Test the Best») es de Birgit Kinder. El Trabi era el coche del pueblo en la RDA: carrocería de duroplast, un plástico reforzado con fibras, y motor de dos tiempos. La espera para comprar uno podía superar los diez años.",
+    "El puente Oberbaumbrücke, de ladrillo rojo y estilo neogótico (1896), fue un paso fronterizo peatonal durante la división. Por arriba circula el metro U1, y hoy une Friedrichshain y Kreuzberg."
+   ],
+   "ayudas": [
+    "«NOV 9-89.»",
+    "«Es el día más famoso de la historia de Berlín.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "¿Qué ocurrió ese día?"
+    }
+   ]
+  },
+  {
+   "num": 18,
+   "dia": "Sábado 10",
+   "hora": "18:10",
+   "lugar": "El hotel",
+   "titulo": "Guardianes de acero",
+   "historia": [
+    "Cae la tarde. Los Guardianes se acercan al corazón del poder. Pero antes de la luz, hay que honrar a los que cayeron.",
+    "En noviembre de 1945, entre ruinas todavía humeantes, los soviéticos levantaron un memorial que acabó quedando en el sector británico."
+   ],
+   "enigma": "Id hasta el gran parque, a la avenida del 17 de junio. Un soldado de bronce vigila desde lo alto. Al llegar: ¿cuántos tanques le custodian?",
+   "extras": [],
+   "rumbo": "A pocos pasos, junto al gran edificio de la cúpula de cristal, hay un estanque oscuro. Buscadlo.",
+   "mas_info": [
+    "El Memorial Soviético del Tiergarten se inauguró en noviembre de 1945, apenas seis meses después del fin de la guerra. Junto a él están enterrados unos 2.000 soldados soviéticos caídos en la batalla de Berlín.",
+    "La paradoja: quedó dentro del sector británico, en Berlín Occidental. Durante toda la Guerra Fría, soldados soviéticos montaban guardia en territorio occidental, y a su vez estaban protegidos por soldados británicos.",
+    "Según la tradición, los dos tanques T-34 se cuentan entre los primeros que entraron en Berlín en 1945. También se dice que parte del mármol procede de la Cancillería de Hitler, aunque los historiadores no se ponen de acuerdo."
+   ],
+   "ayudas": [
+    "«Están a los lados, sobre pedestales.»",
+    "«Uno a cada lado.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "Número de tanques"
+    }
+   ]
+  },
+  {
+   "num": 19,
+   "dia": "Sábado 10",
+   "hora": "18:55",
+   "lugar": "Memorial a los sinti y romaníes",
+   "titulo": "La flor de cada día",
+   "historia": [
+    "Hasta medio millón de sinti y romaníes de Europa fueron asesinados por el nazismo. Este memorial es un estanque de agua negra, rodeado de silencio."
+   ],
+   "enigma": "En el centro del agua hay una piedra de tres lados. Cada día alguien deja sobre ella algo vivo. ¿Qué es?",
+   "extras": [],
+   "rumbo": "Id hacia el gran edificio de la cúpula de cristal. Sin entrar, leed a quién está dedicado.",
+   "mas_info": [
+    "El memorial, obra del artista israelí Dani Karavan, se inauguró en 2012, muy tarde comparado con otros memoriales del Holocausto. El genocidio de los sinti y romaníes, que ellos llaman Porajmos («la devoración»), tardó décadas en reconocerse oficialmente.",
+    "La piedra triangular evoca el triángulo que los prisioneros llevaban cosido en el uniforme de los campos de concentración. Alrededor del estanque, en el suelo, se lee el poema «Auschwitz» del romaní italiano Santino Spinelli.",
+    "La flor que se deposita cada día simboliza que el recuerdo debe renovarse constantemente."
+   ],
+   "ayudas": [
+    "«Es algo que se riega… o se regala.»",
+    "«Una flor.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "¿Qué es?"
+    }
+   ]
+  },
+  {
+   "num": 20,
+   "dia": "Sábado 10",
+   "hora": "19:10",
+   "lugar": "Fachada del Reichstag",
+   "titulo": "Al pueblo",
+   "historia": [
+    "El Reichstag ardió en 1933, fue una ruina durante la Guerra Fría y renació en 1999 con una cúpula de cristal, símbolo de un parlamento transparente."
+   ],
+   "enigma": "¿A quién está dedicado el edificio, según la inscripción de la fachada? Traducidlo.",
+   "extras": [],
+   "rumbo": "Rodead el edificio hacia el río. Junto al agua, unas cruces blancas recuerdan a quienes intentaron cruzar.",
+   "mas_info": [
+    "El Reichstag se construyó entre 1884 y 1894 según el proyecto de Paul Wallot. La inscripción «Dem deutschen Volke» no se añadió hasta 1916, en plena Primera Guerra Mundial. Se dice que las letras se fundieron con el bronce de cañones capturados.",
+    "El incendio del 27 de febrero de 1933 sirvió a Hitler como excusa para suspender los derechos fundamentales. En mayo de 1945, la foto de un soldado soviético izando la bandera roja en su tejado se convirtió en el símbolo del fin de la guerra en Europa.",
+    "En 1995, los artistas Christo y Jeanne-Claude envolvieron el edificio entero en tela plateada durante dos semanas. En 1999, tras la reforma de Norman Foster, volvió a ser sede del Parlamento.",
+    "La cúpula de cristal tiene un cono de espejos que lleva la luz natural al salón de plenos: los ciudadanos, literalmente, caminan por encima de sus representantes."
+   ],
+   "ayudas": [
+    "«Volk = pueblo.»",
+    "«Al pueblo…»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "Dedicatoria traducida"
+    }
+   ]
+  },
+  {
+   "num": 21,
+   "dia": "Sábado 10",
+   "hora": "19:25",
+   "lugar": "Las Cruces Blancas",
+   "titulo": "La orilla prohibida",
+   "historia": [
+    "Justo aquí pasaba la frontera. El río pertenecía al Este, y la orilla, al Oeste."
+   ],
+   "enigma": "¿Qué frontera intentaban atravesar las personas cuyos nombres leéis?",
+   "extras": [],
+   "rumbo": "Id a cenar. A las 21:15, el Host os dará la última orden.",
+   "mas_info": [
+    "Las cruces blancas las instaló en 1971 una asociación ciudadana de Berlín Occidental para recordar a quienes murieron intentando cruzar la frontera. Han cambiado de sitio varias veces y hoy están en esta orilla del Spree, junto al Parlamento.",
+    "Muy cerca de aquí, en el canal de Humboldthafen, murió el 24 de agosto de 1961 Günter Litfin, de 24 años. Fue la primera persona abatida a tiros por los guardias fronterizos, apenas once días después de levantarse el Muro.",
+    "La última persona muerta a tiros en el Muro fue Chris Gueffroy, de 20 años, en febrero de 1989, nueve meses antes de su caída."
+   ],
+   "ayudas": [
+    "«La de esta mañana.»",
+    "«El Muro.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "keywords",
+     "etiqueta": "Frontera"
+    }
+   ]
+  },
+  {
+   "num": 22,
+   "dia": "Sábado 10",
+   "hora": "21:15",
+   "lugar": "Puerta de Brandeburgo",
+   "titulo": "La luz vuelve a la Puerta · CUARTA CIFRA",
+   "historia": [
+    "1814. La Cuádriga vuelve de París. El arquitecto Schinkel añade al estandarte de la diosa Victoria una Cruz de Hierro con hojas de roble, coronada por un águila prusiana.",
+    "Allí, bajo el bronce, los Guardianes grabaron la última cifra. Esta noche la luz ha vuelto a la Puerta. Es el momento."
+   ],
+   "enigma": "Contad quién tira del carro de la diosa. Esa es la <b>CUARTA CIFRA</b>.",
+   "extras": [],
+   "rumbo": "Reunid las cuatro cifras en la Tarjeta de Fragmentos y pedid al Host el Cofre de la Cuádriga.",
+   "mas_info": [
+    "La Puerta tiene doce columnas dóricas, seis por cada lado, que forman cinco pasos. El central estaba reservado a la familia real.",
+    "Por ella han desfilado casi todos los capítulos de la historia alemana: Napoleón entró a caballo en 1806; los nazis celebraron con antorchas su llegada al poder en 1933; y durante la división quedó aislada en tierra de nadie, junto al Muro e inaccesible desde ambos lados.",
+    "El 12 de junio de 1987, Ronald Reagan pronunció aquí, en el lado occidental, su famosa frase: «Señor Gorbachov, derribe este muro».",
+    "El 22 de diciembre de 1989, la Puerta se reabrió oficialmente al paso. Desde entonces es el gran símbolo de la reunificación y el escenario de las celebraciones de la ciudad, como esta noche."
+   ],
+   "ayudas": [
+    "«Cuádriga viene del latín: un carro tirado por…»",
+    "«Contad los caballos.»"
+   ],
+   "campos": [
+    {
+     "id": "a",
+     "tipo": "obligatorio",
+     "modo": "exact",
+     "etiqueta": "Cuarta cifra",
+     "cifra": 4
+    }
+   ],
+   "cifra": 4
+  },
+  {
+   "num": 23,
+   "dia": "Sábado 10",
+   "hora": "Final",
+   "lugar": "Dentro del cofre",
+   "titulo": "El secreto de la Cuádriga",
+   "historia": [],
+   "enigma": null,
+   "extras": [],
+   "rumbo": null,
+   "mas_info": [],
+   "ayudas": [
+    "—",
+    "—"
+   ],
+   "campos": [],
+   "final": true
+  }
+ ]
+}
