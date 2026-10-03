@@ -11,7 +11,7 @@ export type Action =
   | { type: 'ACCEPT'; num: number; now: number }
   | { type: 'FIELD_OK'; num: number; campo: string; valor: string; now: number }
   | { type: 'USE_COMODIN'; num: number }
-  | { type: 'OPEN_COFRE'; now: number }
+  | { type: 'OPEN_COFRE'; carta: string[]; now: number }
   | { type: 'HOST_SOLVE'; num: number; skip: boolean; cifra?: string; now: number }
   | { type: 'SET_LLUVIA'; on: boolean }
   | { type: 'SET_MSG'; text: string }
@@ -81,7 +81,7 @@ export function reduce(state: GameState, action: Action, sobres: readonly Sobre[
       const fin = finalNum(sobres);
       if (state.cofreAbierto || fin < 1 || state.sobres[fin - 1].st !== 'SOLVED') return state;
       const next = patchSobre(state, fin, { st: 'SOLVED', openedAt: action.now, solvedAt: action.now });
-      return { ...next, cofreAbierto: true, finishedAt: action.now };
+      return { ...next, cofreAbierto: true, carta: action.carta, finishedAt: action.now };
     }
 
     case 'HOST_SOLVE': {

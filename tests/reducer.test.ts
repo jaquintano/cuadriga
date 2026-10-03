@@ -124,13 +124,14 @@ describe('comodines', () => {
 describe('cofre', () => {
   it('no se abre antes de resolver el 22', () => {
     const s = resolverHasta(21);
-    expect(run(s, { type: 'OPEN_COFRE', now: t })).toBe(s);
+    expect(run(s, { type: 'OPEN_COFRE', carta: ['x'], now: t })).toBe(s);
   });
 
   it('se abre tras el 22 y cierra la partida', () => {
-    const s = run(resolverHasta(22), { type: 'OPEN_COFRE', now: 5 * t });
+    const s = run(resolverHasta(22), { type: 'OPEN_COFRE', carta: ['Querida Guardiana'], now: 5 * t });
     expect(s.cofreAbierto).toBe(true);
     expect(s.finishedAt).toBe(5 * t);
+    expect(s.carta).toEqual(['Querida Guardiana']);
     expect(s.sobres[FIN].st).toBe('SOLVED');
     expect(fase(s, SOBRES)).toEqual({ tipo: 'fin' });
   });

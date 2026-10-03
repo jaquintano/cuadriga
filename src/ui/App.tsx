@@ -4,7 +4,9 @@ import { reduce, type Action } from '../core/reducer';
 import type { GameState } from '../core/state';
 import { saveState } from '../storage/db';
 import { Logo } from './components/Logo';
+import { Cofre } from './Cofre';
 import { Expediente } from './Expediente';
+import { Fragmentos } from './Fragmentos';
 import { GameCtx, useGame } from './game';
 import { useRuta, type Ruta } from './router';
 import { SobreActual } from './SobreActual';
@@ -15,6 +17,7 @@ const reducer = (s: GameState, a: Action) => reduce(s, a, SOBRES);
 const NAV: { ruta: Ruta['v']; href: string; texto: string }[] = [
   { ruta: 'actual', href: '#/', texto: 'Sobre' },
   { ruta: 'expediente', href: '#/expediente', texto: 'Expediente' },
+  { ruta: 'fragmentos', href: '#/fragmentos', texto: 'Fragmentos' },
 ];
 
 function Pantalla({ ruta }: { ruta: Ruta }) {
@@ -23,6 +26,10 @@ function Pantalla({ ruta }: { ruta: Ruta }) {
       return <Expediente />;
     case 'sobre':
       return <SobreLectura num={ruta.num} />;
+    case 'fragmentos':
+      return <Fragmentos />;
+    case 'cofre':
+      return <Cofre />;
     default:
       return <SobreActual />;
   }
@@ -61,7 +68,7 @@ export function App({ initial }: { initial: GameState }) {
       </main>
       <nav class="nav">
         {NAV.map((n) => (
-          <a key={n.ruta} href={n.href} class={ruta.v === n.ruta || (n.ruta === 'expediente' && ruta.v === 'sobre') ? 'activo' : ''}>
+          <a key={n.ruta} href={n.href} class={ruta.v === n.ruta || (n.ruta === 'expediente' && ruta.v === 'sobre') || (n.ruta === 'fragmentos' && ruta.v === 'cofre') ? 'activo' : ''}>
             {n.texto}
           </a>
         ))}

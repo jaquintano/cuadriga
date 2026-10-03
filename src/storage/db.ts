@@ -45,3 +45,7 @@ export async function pedirPersistencia(): Promise<boolean> {
     return false;
   }
 }
+
+export async function contarFotos(): Promise<number> {
+  return (await db()).count('photos');
+}

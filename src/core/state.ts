@@ -32,6 +32,8 @@ export interface GameState {
   cifras: (string | null)[];
   comodinesLeft: number;
   cofreAbierto: boolean;
+  /** Carta final descifrada al abrir el cofre (así no hay que volver a pedir el código). */
+  carta?: string[];
   lluvia: boolean;
   hostMessage: string;
   hostPinSet: boolean;

@@ -1,8 +1,10 @@
-import { pad2 } from '../core/content';
+import { pad2, SOBRES } from '../core/content';
+import { finalNum } from '../core/reducer';
 import type { SobreState } from '../core/state';
 import type { Sobre } from '../core/types';
 import { Campos } from './Campos';
 import { Rich } from './components/Rich';
+import { Tarjeta } from './Fragmentos';
 
 const ETIQUETA_EXTRA: Record<string, string> = {
   reto: 'Reto',
@@ -62,9 +64,16 @@ export function SobreView({ sobre, s, onSiguiente }: { sobre: Sobre; s: SobreSta
 
       <Campos sobre={sobre} s={s} />
 
+      {resuelto && sobre.cifra && onSiguiente && (
+        <section class="fragmento-recuperado">
+          <h3 class="mono centrado">Fragmento recuperado</h3>
+          <Tarjeta destacar={sobre.cifra} />
+        </section>
+      )}
+
       {resuelto && onSiguiente && (
         <button class="btn-principal" onClick={onSiguiente}>
-          Siguiente sobre →
+          {sobre.num === finalNum(SOBRES) - 1 ? 'Ir al Cofre →' : 'Siguiente sobre →'}
         </button>
       )}
 

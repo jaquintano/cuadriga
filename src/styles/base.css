@@ -521,6 +521,226 @@ summary:focus-visible {
   text-align: center;
 }
 
+/* ============ Tarjeta de Fragmentos ============ */
+.tarjeta {
+  margin: 16px 0;
+  padding: 16px 12px 12px;
+  background: #fffaf0;
+  border: 2px solid var(--tinta);
+  border-radius: var(--radio);
+  box-shadow: 4px 4px 0 var(--sepia);
+}
+.tarjeta-titulo {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.grupos {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 8px;
+}
+.grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.casillas {
+  display: flex;
+  gap: 6px;
+  perspective: 400px;
+}
+.casilla {
+  width: 56px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--sepia);
+  border-radius: var(--radio);
+  font: 700 40px var(--mono);
+  color: var(--sepia);
+}
+.casilla.llena {
+  border: 2px solid var(--rojo);
+  background: var(--papel);
+  color: var(--rojo);
+}
+.casilla.nueva {
+  animation: girar-casilla 0.9s 0.3s cubic-bezier(0.3, 1.4, 0.5, 1) both;
+}
+@keyframes girar-casilla {
+  from {
+    transform: rotateY(180deg) scale(0.6);
+    color: transparent;
+    background: var(--papel-osc);
+  }
+  60% {
+    color: transparent;
+  }
+}
+.grupo-titulo {
+  margin: 6px 0 0;
+  text-align: center;
+  font: 12px/1.3 var(--mono);
+  color: var(--sepia);
+  text-transform: uppercase;
+}
+.fragmento-recuperado {
+  margin: 24px 0 0;
+}
+
+/* ============ Cofre ============ */
+.baul {
+  position: relative;
+  width: 200px;
+  height: 170px;
+  margin: 24px auto 16px;
+  perspective: 600px;
+}
+.baul .cuerpo,
+.baul .tapa {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border: 3px solid var(--tinta);
+  background:
+    repeating-linear-gradient(90deg, rgb(0 0 0 / 0.08) 0 2px, transparent 2px 40px),
+    linear-gradient(#8a5a33, #5e3a1d);
+}
+.baul .cuerpo {
+  bottom: 0;
+  height: 100px;
+  border-radius: 0 0 8px 8px;
+}
+.baul .tapa {
+  top: 18px;
+  height: 56px;
+  border-radius: 40px 40px 4px 4px;
+  transform-origin: 50% 100%;
+  transition: transform 1.4s cubic-bezier(0.3, 1.3, 0.5, 1);
+  z-index: 2;
+}
+.baul .banda {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 26px;
+  margin-left: -13px;
+  background: linear-gradient(90deg, #b8913a, #e6c66a, #b8913a);
+}
+.baul .cerradura {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  width: 34px;
+  height: 40px;
+  margin-left: -17px;
+  border-radius: 4px;
+  background: var(--tinta);
+  box-shadow: inset 0 0 0 3px #e6c66a;
+}
+.baul .cerradura::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 12px;
+  width: 8px;
+  height: 16px;
+  margin-left: -4px;
+  border-radius: 4px 4px 1px 1px;
+  background: #e6c66a;
+}
+.baul .luz {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: 50%;
+  background: #fff3c4;
+  box-shadow: 0 0 0 0 #ffe9a0;
+  opacity: 0;
+  transition: box-shadow 1.6s 0.5s ease-out, opacity 0.6s 0.5s;
+  z-index: 1;
+}
+.baul.abierto .tapa {
+  transform: rotateX(72deg); /* la tapa se inclina hacia atrás, escorzada */
+}
+.baul.abierto .luz {
+  opacity: 1;
+  box-shadow: 0 0 60px 50px rgb(255 233 160 / 0.8);
+}
+
+.dial .ruedas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+.rueda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.rueda button {
+  width: 64px;
+  min-height: 52px;
+  padding: 0;
+  font-size: 20px;
+  background: var(--papel-osc);
+  color: var(--tinta);
+}
+.digito {
+  width: 64px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--tinta);
+  border-radius: var(--radio);
+  background: #fffaf0;
+  font-size: 48px;
+  font-weight: 700;
+}
+.dial.error .ruedas {
+  animation: temblor 0.35s;
+}
+
+.carta {
+  margin: 8px 0 24px;
+  padding: 20px;
+  background: #fffaf0;
+  border: 1px solid var(--sepia);
+  box-shadow: 0 6px 18px rgb(43 33 24 / 0.2);
+  animation: desplegar 0.8s 0.4s ease-out both;
+}
+.carta .meta {
+  margin: 0;
+  font-size: 14px;
+  color: var(--sepia);
+  text-transform: uppercase;
+}
+.mensaje-personal {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--sepia);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--azul);
+}
+.resumen h3 {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
