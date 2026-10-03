@@ -4,6 +4,7 @@ import type { SobreState } from '../core/state';
 import type { Sobre } from '../core/types';
 import { Campos } from './Campos';
 import { Comodin } from './Comodin';
+import { RetoFoto } from './Fotos';
 import { Rich } from './components/Rich';
 import { Tarjeta } from './Fragmentos';
 
@@ -51,6 +52,7 @@ export function SobreView({ sobre, s, onSiguiente }: { sobre: Sobre; s: SobreSta
             <li key={i} class={`extra extra-${e.tipo}`}>
               {ETIQUETA_EXTRA[e.tipo] && <span class="chip mono">{ETIQUETA_EXTRA[e.tipo]}</span>}
               <Rich html={e.texto} />
+              {e.foto && <RetoFoto sobre={sobre.num} reto={i} />}
             </li>
           ))}
         </ul>

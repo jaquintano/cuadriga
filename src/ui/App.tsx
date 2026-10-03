@@ -8,6 +8,7 @@ import { Cofre } from './Cofre';
 import { ContadorComodines } from './Comodin';
 import { Expediente } from './Expediente';
 import { Fragmentos } from './Fragmentos';
+import { Galeria } from './Galeria';
 import { GameCtx, useGame } from './game';
 import { useRuta, type Ruta } from './router';
 import { SobreActual } from './SobreActual';
@@ -19,6 +20,7 @@ const NAV: { ruta: Ruta['v']; href: string; texto: string }[] = [
   { ruta: 'actual', href: '#/', texto: 'Sobre' },
   { ruta: 'expediente', href: '#/expediente', texto: 'Expediente' },
   { ruta: 'fragmentos', href: '#/fragmentos', texto: 'Fragmentos' },
+  { ruta: 'galeria', href: '#/galeria', texto: 'Fotos' },
 ];
 
 function Pantalla({ ruta }: { ruta: Ruta }) {
@@ -31,6 +33,8 @@ function Pantalla({ ruta }: { ruta: Ruta }) {
       return <Fragmentos />;
     case 'cofre':
       return <Cofre />;
+    case 'galeria':
+      return <Galeria />;
     default:
       return <SobreActual />;
   }
