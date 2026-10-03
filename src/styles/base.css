@@ -741,6 +741,65 @@ summary:focus-visible {
   text-transform: uppercase;
 }
 
+/* ============ Comodines ============ */
+.contador-comodines {
+  display: inline-flex;
+  gap: 5px;
+}
+.ficha {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--papel-osc);
+}
+.ficha.viva {
+  background: #e6c66a;
+  border-color: #e6c66a;
+}
+.btn-secundario {
+  width: 100%;
+  background: var(--papel);
+  color: var(--tinta);
+}
+.btn-secundario.claro {
+  background: transparent;
+}
+.comodin {
+  margin: 16px 0;
+}
+.comodin.usado {
+  padding: 14px 16px;
+  border: 2px solid #b8913a;
+  border-radius: var(--radio);
+  background: rgb(230 198 106 / 0.18);
+}
+.comodin.usado h3 {
+  font-size: 16px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #7a5c1a;
+}
+.comodin.usado p {
+  margin: 0 0 10px;
+}
+.comodin .segunda {
+  padding-top: 10px;
+  border-top: 1px dashed #b8913a;
+}
+.comodin.agotado {
+  font-size: 14px;
+  color: var(--sepia);
+  text-align: center;
+}
+.confirmar p {
+  margin: 0 0 10px;
+}
+.confirmar .botones {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

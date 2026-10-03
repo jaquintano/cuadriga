@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { SOBRES } from '../src/core/content';
 import { finalNum, reduce, type Action } from '../src/core/reducer';
-import { fase, puntosHonor } from '../src/core/selectors';
+import { fase, puntosHonor, tieneAyudas } from '../src/core/selectors';
 import { initialState, type GameState } from '../src/core/state';
 
 const run = (s: GameState, ...as: Action[]) => as.reduce((acc, a) => reduce(acc, a, SOBRES), s);
@@ -118,6 +118,14 @@ describe('comodines', () => {
     expect(run(s, { type: 'USE_COMODIN', num: 5 })).toBe(s);
     s = { ...run(s, { type: 'OPEN', num: 6, now: t }), comodinesLeft: 0 };
     expect(run(s, { type: 'USE_COMODIN', num: 6 })).toBe(s);
+  });
+});
+
+describe('ayudas de comodín', () => {
+  it('se ofrece comodín solo en sobres con ayudas útiles', () => {
+    expect(tieneAyudas(SOBRES[1])).toBe(true);
+    expect(tieneAyudas(SOBRES[14])).toBe(false); // «(No hace falta.)»
+    expect(tieneAyudas(SOBRES[FIN])).toBe(false); // «—»
   });
 });
 

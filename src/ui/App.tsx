@@ -5,6 +5,7 @@ import type { GameState } from '../core/state';
 import { saveState } from '../storage/db';
 import { Logo } from './components/Logo';
 import { Cofre } from './Cofre';
+import { ContadorComodines } from './Comodin';
 import { Expediente } from './Expediente';
 import { Fragmentos } from './Fragmentos';
 import { GameCtx, useGame } from './game';
@@ -62,6 +63,7 @@ export function App({ initial }: { initial: GameState }) {
           <Logo size={34} />
         </span>
         <span class="mono titulo-app">El Secreto de la Cuádriga</span>
+        <ContadorComodines />
       </header>
       <main class="contenido">
         <Pantalla ruta={ruta} />

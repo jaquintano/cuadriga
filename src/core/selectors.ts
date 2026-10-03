@@ -32,3 +32,11 @@ export function honorPosibles(sobres: readonly Sobre[]): number {
 export function comodinesUsados(state: GameState): number {
   return state.sobres.filter((s) => s.comodin).length;
 }
+
+/** Una ayuda «vacía» en contenido.py: «—» o «(No hace falta.)». */
+export const ayudaUtil = (a: string) => a.trim() !== '' && a.trim() !== '—' && !a.trim().startsWith('(');
+
+/** El sobre admite comodín si tiene al menos una ayuda útil. */
+export function tieneAyudas(sobre: Sobre): boolean {
+  return ayudaUtil(sobre.ayudas[0]);
+}
