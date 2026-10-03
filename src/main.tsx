@@ -1,21 +1,26 @@
 import { render } from 'preact';
-import contenido from './content/sobres.json';
+import '@fontsource/source-serif-4/latin-400.css';
+import '@fontsource/source-serif-4/latin-400-italic.css';
+import '@fontsource/source-serif-4/latin-700.css';
+import '@fontsource/ibm-plex-mono/latin-400.css';
+import '@fontsource/ibm-plex-mono/latin-700.css';
+import './styles/base.css';
+import { SOBRES } from './core/content';
+import { loadState, pedirPersistencia } from './storage/db';
+import { App } from './ui/App';
 
-// Placeholder del hito 1: comprueba que el contenido generado se carga.
-function App() {
-  return (
-    <main style={{ fontFamily: 'serif', padding: 16 }}>
-      <h1>El Secreto de la Cuádriga</h1>
-      <p>{contenido.sobres.length} sobres cargados.</p>
-      <ol start={0}>
-        {contenido.sobres.map((s) => (
-          <li key={s.num}>
-            {s.dia} {s.hora} · {s.titulo} · {s.campos.length} campos
-          </li>
-        ))}
-      </ol>
-    </main>
-  );
+async function arrancar() {
+  const root = document.getElementById('app')!;
+  void pedirPersistencia();
+  try {
+    const initial = await loadState(SOBRES);
+    render(<App initial={initial} />, root);
+  } catch (e) {
+    console.error(e);
+    root.innerHTML =
+      '<p style="padding:16px">No se pudo abrir el almacenamiento del expediente. ' +
+      'Comprobad que no estáis en modo incógnito y recargad.</p>';
+  }
 }
 
-render(<App />, document.getElementById('app')!);
+void arrancar();

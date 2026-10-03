@@ -1,0 +1,531 @@
+/* ============ Tokens: expediente clasificado ============ */
+:root {
+  --papel: #f3e9d2;
+  --papel-osc: #e4d4ae;
+  --tinta: #2b2118;
+  --sepia: #7a5c3a;
+  --rojo: #a3262a;
+  --azul: #1f3a5f;
+  --ok: #2f5d34;
+  --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'Courier New', monospace;
+  --radio: 6px;
+  --nav-h: 64px;
+  color-scheme: light; /* Siempre claro: se lee mejor a pleno sol. */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background: var(--papel-osc);
+  color: var(--tinta);
+  font: 400 18px/1.55 var(--serif);
+  min-height: 100dvh;
+}
+
+#app {
+  overflow-x: clip; /* el sello «Resuelto» se anima con scale(2.2) junto al borde */
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgb(255 255 255 / 0.35), transparent 60%),
+    repeating-linear-gradient(0deg, rgb(122 92 58 / 0.035) 0 1px, transparent 1px 28px),
+    var(--papel);
+  box-shadow: 0 0 24px rgb(43 33 24 / 0.25);
+  padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom) + 16px);
+}
+
+.mono {
+  font-family: var(--mono);
+  letter-spacing: 0.04em;
+}
+
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+a {
+  color: var(--azul);
+}
+
+button {
+  font: 700 18px/1.2 var(--mono);
+  min-height: 56px;
+  padding: 0 20px;
+  border: 2px solid var(--tinta);
+  border-radius: var(--radio);
+  background: var(--tinta);
+  color: var(--papel);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+button:disabled {
+  opacity: 0.5;
+}
+button:focus-visible,
+input:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--azul);
+  outline-offset: 2px;
+}
+
+.btn-principal {
+  display: block;
+  width: 100%;
+  margin: 24px 0;
+  background: var(--rojo);
+  border-color: var(--rojo);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ============ Cabecera y navegación ============ */
+.cabecera {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: calc(8px + env(safe-area-inset-top)) 16px 8px;
+  background: var(--tinta);
+  color: var(--papel);
+}
+.logo {
+  display: inline-flex;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.titulo-app {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  flex: 1;
+}
+
+.contenido {
+  padding: 16px;
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: env(safe-area-inset-bottom);
+  background: var(--tinta);
+}
+.nav a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--nav-h);
+  color: var(--papel-osc);
+  font: 700 14px var(--mono);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+.nav a.activo {
+  color: var(--papel);
+  box-shadow: inset 0 -4px 0 var(--rojo);
+}
+
+/* ============ Sellos ============ */
+.sello-clasificado {
+  position: absolute;
+  top: 8px;
+  right: 4px;
+  transform: rotate(-12deg);
+  padding: 2px 10px;
+  border: 3px double var(--rojo);
+  border-radius: 4px;
+  color: var(--rojo);
+  font: 700 16px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.85;
+  pointer-events: none;
+}
+.sello-resuelto {
+  color: var(--ok);
+  border-color: var(--ok);
+  animation: estampar 0.45s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+}
+@keyframes estampar {
+  from {
+    transform: rotate(-12deg) scale(2.2);
+    opacity: 0;
+  }
+}
+
+/* ============ Sobre cerrado ============ */
+.sobre-cerrado {
+  position: relative;
+  margin: 8px 0;
+  padding: 72px 20px 24px;
+  background: var(--papel-osc);
+  border: 1px solid var(--sepia);
+  border-radius: var(--radio);
+  box-shadow: 0 6px 18px rgb(43 33 24 / 0.25);
+  text-align: center;
+  overflow: hidden;
+}
+.solapa {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 64px;
+  background: linear-gradient(to bottom right, transparent 49.5%, var(--sepia) 50%, transparent 50.5%),
+    linear-gradient(to bottom left, transparent 49.5%, var(--sepia) 50%, transparent 50.5%);
+  background-size: 50% 100%;
+  background-position: left, right;
+  background-repeat: no-repeat;
+  transform-origin: top;
+  opacity: 0.6;
+  transition: transform 0.6s 0.45s ease-in;
+}
+.sobre-cerrado .etiqueta {
+  margin: 0;
+  color: var(--sepia);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.num-grande {
+  font-size: 34px;
+  margin: 4px 0 16px;
+}
+.ficha {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 14px;
+  max-width: 420px;
+  margin: 0 auto 24px;
+  text-align: left;
+}
+.ficha dt {
+  font: 700 14px/1.9 var(--mono);
+  text-transform: uppercase;
+  color: var(--sepia);
+}
+.ficha dd {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.lacre {
+  position: relative;
+  width: 112px;
+  height: 112px;
+  min-height: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  filter: drop-shadow(0 4px 6px rgb(0 0 0 / 0.35));
+}
+.lacre .mitad {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* El anillo va en el propio fondo: clip-path recortaría un box-shadow exterior. */
+  background:
+    radial-gradient(circle, transparent 60%, rgb(0 0 0 / 0.18) 61% 64%, transparent 65%),
+    radial-gradient(circle at 35% 30%, #d0484c, var(--rojo) 55%, #6e1518);
+  box-shadow: inset 0 -6px 12px rgb(0 0 0 / 0.3);
+  color: rgb(255 255 255 / 0.75);
+  font: italic 700 34px var(--serif);
+  transition: transform 0.7s cubic-bezier(0.5, 0, 0.75, 0), opacity 0.7s ease-in;
+}
+/* Grieta en zigzag: cada mitad es el mismo sello recortado. */
+.lacre .izq {
+  clip-path: polygon(0 0, 52% 0, 44% 22%, 56% 40%, 42% 58%, 54% 78%, 46% 100%, 0 100%);
+}
+.lacre .der {
+  clip-path: polygon(52% 0, 100% 0, 100% 100%, 46% 100%, 54% 78%, 42% 58%, 56% 40%, 44% 22%);
+}
+.lacre:not(:disabled) .mitad {
+  animation: latido 2.4s ease-in-out infinite;
+}
+@keyframes latido {
+  50% {
+    transform: scale(1.04);
+  }
+}
+.abriendo .lacre .izq {
+  transform: translate(-60px, 90px) rotate(-35deg);
+  opacity: 0;
+}
+.abriendo .lacre .der {
+  transform: translate(60px, 90px) rotate(35deg);
+  opacity: 0;
+}
+.abriendo .solapa {
+  transform: scaleY(-1);
+}
+.lacre:disabled {
+  opacity: 1;
+}
+.pista-sello {
+  margin: 12px 0 0;
+  font: 14px var(--mono);
+  color: var(--sepia);
+  text-transform: uppercase;
+}
+
+/* ============ Sobre abierto ============ */
+.sobre {
+  animation: desplegar 0.5s ease-out both;
+}
+@keyframes desplegar {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+.sobre-cab {
+  position: relative;
+  padding-top: 4px;
+  border-bottom: 2px solid var(--tinta);
+  margin-bottom: 16px;
+}
+.sobre-cab .meta {
+  margin: 0;
+  font-size: 14px;
+  color: var(--sepia);
+  padding-right: 120px;
+}
+.sobre-cab .lugar {
+  margin: 2px 0 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 120px;
+}
+.sobre-cab h2 {
+  font-size: 26px;
+}
+.historia p {
+  margin: 0 0 1em;
+}
+
+.bloque {
+  margin: 20px 0;
+  padding: 14px 16px;
+  border-left: 6px solid;
+  background: rgb(255 255 255 / 0.45);
+  border-radius: 0 var(--radio) var(--radio) 0;
+}
+.bloque h3 {
+  font-size: 16px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.bloque p {
+  margin: 0;
+}
+.enigma {
+  border-color: var(--rojo);
+}
+.enigma h3 {
+  color: var(--rojo);
+}
+.rumbo {
+  border-color: var(--azul);
+}
+.rumbo h3 {
+  color: var(--azul);
+}
+
+.extras {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+}
+.extra {
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  border: 1px dashed var(--sepia);
+  border-radius: var(--radio);
+}
+.chip {
+  display: inline-block;
+  margin: 0 8px 0 0;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--sepia);
+  color: var(--papel);
+  font: 700 12px/1.6 var(--mono);
+  text-transform: uppercase;
+  vertical-align: 2px;
+}
+.chip.honor {
+  background: var(--azul);
+  margin-left: 8px;
+}
+.chip.cifra {
+  background: var(--rojo);
+  margin-left: 8px;
+}
+
+/* ============ Respuestas ============ */
+.respuestas {
+  margin: 24px 0;
+  padding: 16px;
+  background: var(--papel-osc);
+  border-radius: var(--radio);
+}
+.respuestas h3 {
+  font-size: 16px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.campo {
+  margin: 0 0 16px;
+}
+.campo label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.campo label .chip {
+  margin-left: 8px;
+}
+.fila-input {
+  display: flex;
+  gap: 8px;
+}
+.fila-input input {
+  flex: 1;
+  min-width: 0;
+  min-height: 56px;
+  padding: 0 12px;
+  border: 2px solid var(--tinta);
+  border-radius: var(--radio);
+  background: #fffaf0;
+  color: var(--tinta);
+  font: 20px var(--serif);
+}
+.campo.opcional label {
+  font-weight: 400;
+}
+.aceptada {
+  margin: 0;
+  font: 700 18px var(--mono);
+  color: var(--ok);
+}
+.centrado {
+  text-align: center;
+  margin: 24px 0;
+}
+.fallo {
+  margin: 8px 0 0;
+  color: var(--rojo);
+  font-style: italic;
+  animation: temblor 0.35s;
+}
+@keyframes temblor {
+  25% {
+    transform: translateX(-6px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+}
+.nota-host {
+  margin: 0;
+  font: 14px var(--mono);
+  color: var(--sepia);
+}
+
+.mas-info {
+  margin: 24px 0;
+  border-top: 2px solid var(--sepia);
+  padding-top: 8px;
+}
+.mas-info summary {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--sepia);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.mas-info p {
+  font-size: 17px;
+}
+
+/* ============ Expediente ============ */
+.indice {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.indice .item > a,
+.indice .item.cerrado {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  min-height: 64px;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--papel-osc);
+  color: inherit;
+  text-decoration: none;
+}
+.indice .n {
+  font-size: 22px;
+  font-weight: 700;
+  width: 2.2ch;
+}
+.indice .t {
+  display: flex;
+  flex-direction: column;
+}
+.indice small {
+  font: 14px var(--mono);
+  color: var(--sepia);
+}
+.indice .cerrado {
+  opacity: 0.55;
+}
+.indice .en-curso .n {
+  color: var(--rojo);
+}
+
+.aviso,
+.aviso-cofre {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
