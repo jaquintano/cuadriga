@@ -1,0 +1,61 @@
+name: Desplegar en GitHub Pages
+
+# Cada push a main: tests, build, comprobación anti-spoiler, smoke test offline y despliegue.
+# El contenido (src/content/*.json) llega ya generado desde local: CI no necesita ni el PIN
+# ni contenido.py ni respuestas.toml.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Tests unitarios (el test con respuestas reales se omite en CI)
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Anti-spoiler (el código del cofre no aparece en el bundle)
+        run: node scripts/ci-check-bundle.mjs dist
+
+      - name: Smoke test offline (Playwright)
+        run: |
+          npx playwright install --with-deps chromium
+          npx playwright test --reporter=line
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
