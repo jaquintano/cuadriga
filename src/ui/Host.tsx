@@ -5,6 +5,7 @@ import { finalNum } from '../core/reducer';
 import { fase } from '../core/selectors';
 import { crearBackup, leerBackup, nombreBackup } from '../storage/backup';
 import { descargar } from '../storage/descargas';
+import { suscribirOffline, type EstadoOffline } from '../storage/offline';
 import { borrarTodasLasFotos } from '../storage/photos';
 import { Rich } from './components/Rich';
 import { avisarFotos } from './Fotos';
@@ -279,6 +280,24 @@ function Copias() {
   );
 }
 
+function EstadoDispositivo() {
+  const [e, setE] = useState<EstadoOffline>({ listo: false, persistente: null });
+  useEffect(() => suscribirOffline(setE), []);
+  const si = (v: boolean | null) => (v === null ? '…' : v ? 'sí ✓' : 'NO');
+  return (
+    <>
+      <p class="mono host-estado">
+        Offline listo: {si(e.listo)} · almacenamiento persistente: {si(e.persistente)}
+      </p>
+      {e.persistente === false && (
+        <p class="host-estado">
+          Chrome concede el almacenamiento persistente a las apps instaladas: instálala en la pantalla de inicio y vuelve a abrirla.
+        </p>
+      )}
+    </>
+  );
+}
+
 function PanelHost() {
   const { state } = useGame();
   const f = fase(state, SOBRES);
@@ -306,6 +325,7 @@ function PanelHost() {
           Ir al sobre en juego ({pad2(f.num)})
         </button>
       )}
+      <EstadoDispositivo />
       <FichaSobre num={num} setNum={setNum} />
       <Lluvia />
       <Mensaje />

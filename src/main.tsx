@@ -7,11 +7,13 @@ import '@fontsource/ibm-plex-mono/latin-700.css';
 import './styles/base.css';
 import { SOBRES } from './core/content';
 import { loadState, pedirPersistencia } from './storage/db';
+import { marcarPersistencia, registrarSW } from './storage/offline';
 import { App } from './ui/App';
 
 async function arrancar() {
   const root = document.getElementById('app')!;
-  void pedirPersistencia();
+  registrarSW();
+  void pedirPersistencia().then(marcarPersistencia);
   try {
     const initial = await loadState(SOBRES);
     render(<App initial={initial} />, root);
