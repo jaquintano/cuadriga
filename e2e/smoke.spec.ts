@@ -43,7 +43,22 @@ test('funciona sin conexión y conserva el progreso', async ({ page, context }) 
   await expect(page.getByRole('heading', { name: 'Comodín' })).toBeVisible();
   await expect(page.locator('.ficha-comodin.viva')).toHaveCount(2);
 
-  // 6. Recargar sin red: el progreso sigue ahí (IndexedDB).
+  // 6. Recargar sin red: el progreso sigue ahí (IndexedDB). Antes, esperar a que la escritura
+  //    esté confirmada: ningún almacenamiento asíncrono sobrevive a recargar en el mismo milisegundo.
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () =>
+          new Promise<number>((ok) => {
+            const q = indexedDB.open('cuadriga');
+            q.onsuccess = () => {
+              const g = q.result.transaction('kv').objectStore('kv').get('state');
+              g.onsuccess = () => ok(g.result?.comodinesLeft);
+            };
+          }),
+      ),
+    )
+    .toBe(2);
   await page.reload();
   await expect(page.getByRole('heading', { name: /frontera/ })).toBeVisible();
   await expect(page.locator('.ficha-comodin.viva')).toHaveCount(2);

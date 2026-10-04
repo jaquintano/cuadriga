@@ -1,8 +1,6 @@
-import { useEffect, useMemo, useReducer } from 'preact/hooks';
+import { useMemo } from 'preact/hooks';
 import { SOBRES } from '../core/content';
-import { reduce, type Action } from '../core/reducer';
 import type { GameState } from '../core/state';
-import { saveState } from '../storage/db';
 import { Icono } from './components/Iconos';
 import { Logo } from './components/Logo';
 import { Agenda } from './Agenda';
@@ -17,8 +15,7 @@ import { go, useRuta, type Ruta } from './router';
 import { SobreActual } from './SobreActual';
 import { SobreView } from './SobreView';
 import { useLongPress } from './useLongPress';
-
-const reducer = (s: GameState, a: Action) => reduce(s, a, SOBRES);
+import { usePersistentReducer } from './usePersistentReducer';
 
 const NAV: { ruta: Ruta['v']; icono: string; href: string; texto: string }[] = [
   { ruta: 'actual', icono: 'sobre', href: '#/', texto: 'Sobre' },
@@ -59,13 +56,9 @@ function SobreLectura({ num }: { num: number }) {
 }
 
 export function App({ initial }: { initial: GameState }) {
-  const [state, dispatch] = useReducer(reducer, initial);
+  // Cada cambio se guarda en IndexedDB al despacharlo (ver usePersistentReducer).
+  const [state, dispatch] = usePersistentReducer(initial);
   const ruta = useRuta();
-
-  // Persistir cada cambio. IndexedDB es transaccional: un cierre brusco deja el último estado completo.
-  useEffect(() => {
-    saveState(state).catch((e) => console.error('No se pudo guardar el estado', e));
-  }, [state]);
 
   const game = useMemo(() => ({ state, dispatch }), [state]);
   // Entrada al modo Host: pulsación larga en el logo.
