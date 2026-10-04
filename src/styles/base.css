@@ -749,13 +749,13 @@ summary:focus-visible {
   display: inline-flex;
   gap: 5px;
 }
-.ficha {
+.ficha-comodin {
   width: 14px;
   height: 14px;
   border-radius: 50%;
   border: 2px solid var(--papel-osc);
 }
-.ficha.viva {
+.ficha-comodin.viva {
   background: #e6c66a;
   border-color: #e6c66a;
 }

@@ -12,7 +12,7 @@ export function ContadorComodines() {
   return (
     <span class="contador-comodines" aria-label={`Quedan ${n} de ${COMODINES} comodines`} title="Comodines">
       {Array.from({ length: COMODINES }, (_, i) => (
-        <span key={i} class={`ficha${i < n ? ' viva' : ''}`} aria-hidden="true" />
+        <span key={i} class={`ficha-comodin${i < n ? ' viva' : ''}`} aria-hidden="true" />
       ))}
     </span>
   );

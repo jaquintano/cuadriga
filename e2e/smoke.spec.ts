@@ -9,6 +9,8 @@ test('funciona sin conexión y conserva el progreso', async ({ page, context }) 
   // 1. Primera visita con red: el service worker precachea la app.
   await page.goto('./');
   await expect(page.getByRole('heading', { name: 'Sobre 00' })).toBeVisible();
+  // Regresión: la ficha (Día/Hora) del sobre cerrado no debe colapsar por choques de clases CSS.
+  expect((await page.locator('.sobre-cerrado .ficha').boundingBox())!.width).toBeGreaterThan(200);
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
@@ -39,12 +41,12 @@ test('funciona sin conexión y conserva el progreso', async ({ page, context }) 
   await page.getByRole('button', { name: /Usar comodín/ }).click();
   await page.getByRole('button', { name: 'Sí, usar' }).click();
   await expect(page.getByRole('heading', { name: 'Comodín' })).toBeVisible();
-  await expect(page.locator('.ficha.viva')).toHaveCount(2);
+  await expect(page.locator('.ficha-comodin.viva')).toHaveCount(2);
 
   // 6. Recargar sin red: el progreso sigue ahí (IndexedDB).
   await page.reload();
   await expect(page.getByRole('heading', { name: /frontera/ })).toBeVisible();
-  await expect(page.locator('.ficha.viva')).toHaveCount(2);
+  await expect(page.locator('.ficha-comodin.viva')).toHaveCount(2);
 
   // 7. Las demás pantallas cargan offline y no revelan lugares de sobres cerrados.
   await page.getByRole('link', { name: /Expediente/ }).click();

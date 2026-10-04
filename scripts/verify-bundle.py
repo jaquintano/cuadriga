@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Busca spoilers en claro en el bundle construido (dist/). Solo local: usa contenido.py y respuestas.toml.
 
-    npm run build && python scripts/verify-bundle.py
+    npm run build && python scripts/verify-bundle.py [directorio]   (por defecto: dist)
 
 FALLA si en dist/ aparece:
   - el código del cofre (con o sin guiones),
@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).parent))
 from normalize import normalize  # noqa: E402
 
-DIST = ROOT / "dist"
+DIST = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "dist"
 
 
 def plano(html):
