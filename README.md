@@ -116,9 +116,9 @@ CI no necesita el PIN ni `contenido.py`: despliega los JSON ya generados.
 
 ## 4. Instalar en Android
 
-1. Abre **https://jaquintano.github.io/cuadriga/** en **Chrome**.
-2. Menú ⋮ → **«Instalar aplicación»** (o «Añadir a pantalla de inicio» → Instalar).
-3. Ábrela desde el icono del sello rojo: se abre a pantalla completa, sin barra del navegador.
+1. Abre **https://jaquintano.github.io/cuadriga/** en **Chrome** (no en el navegador integrado de WhatsApp o Gmail).
+2. Pulsa **«Instalar»** en el aviso azul bajo la cabecera. Si no aparece el botón, usa el menú ⋮ → **«Instalar aplicación»**.
+3. Ábrela desde el icono del sello rojo: se abre a pantalla completa, sin la barra del navegador, y el aviso ya no sale.
 
 Tras la primera carga, todo funciona sin conexión. Si despliegas una versión nueva, se actualiza sola la próxima vez que la abras con conexión.
 
